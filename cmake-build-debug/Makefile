@@ -48,10 +48,10 @@ RM = /home/mahmoud/clion-2020.1.2/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahmoud/CLionProjects/game_engine
+CMAKE_SOURCE_DIR = /home/mahmoud/CLionProjects/tears_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahmoud/CLionProjects/game_engine/cmake-build-debug
+CMAKE_BINARY_DIR = /home/mahmoud/CLionProjects/tears_engine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahmoud/CLionProjects/game_engine/cmake-build-debug/CMakeFiles /home/mahmoud/CLionProjects/game_engine/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles /home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahmoud/CLionProjects/game_engine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,354 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named game_engine
+# Target rules for targets named tears_engine
 
 # Build rule for target.
-game_engine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 game_engine
-.PHONY : game_engine
+tears_engine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tears_engine
+.PHONY : tears_engine
 
 # fast build rule for target.
-game_engine/fast:
-	$(MAKE) -f CMakeFiles/game_engine.dir/build.make CMakeFiles/game_engine.dir/build
-.PHONY : game_engine/fast
+tears_engine/fast:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/build
+.PHONY : tears_engine/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named glfw
 
-.PHONY : main.o
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) -f vendor/glfw/src/CMakeFiles/glfw.dir/build.make vendor/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+source/Components/Component.o: source/Components/Component.cpp.o
+
+.PHONY : source/Components/Component.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/game_engine.dir/build.make CMakeFiles/game_engine.dir/main.cpp.o
-.PHONY : main.cpp.o
+source/Components/Component.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o
+.PHONY : source/Components/Component.cpp.o
 
-main.i: main.cpp.i
+source/Components/Component.i: source/Components/Component.cpp.i
 
-.PHONY : main.i
+.PHONY : source/Components/Component.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/game_engine.dir/build.make CMakeFiles/game_engine.dir/main.cpp.i
-.PHONY : main.cpp.i
+source/Components/Component.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/Component.cpp.i
+.PHONY : source/Components/Component.cpp.i
 
-main.s: main.cpp.s
+source/Components/Component.s: source/Components/Component.cpp.s
 
-.PHONY : main.s
+.PHONY : source/Components/Component.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/game_engine.dir/build.make CMakeFiles/game_engine.dir/main.cpp.s
-.PHONY : main.cpp.s
+source/Components/Component.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/Component.cpp.s
+.PHONY : source/Components/Component.cpp.s
+
+source/Entity/Entity.o: source/Entity/Entity.cpp.o
+
+.PHONY : source/Entity/Entity.o
+
+# target to build an object file
+source/Entity/Entity.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o
+.PHONY : source/Entity/Entity.cpp.o
+
+source/Entity/Entity.i: source/Entity/Entity.cpp.i
+
+.PHONY : source/Entity/Entity.i
+
+# target to preprocess a source file
+source/Entity/Entity.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.i
+.PHONY : source/Entity/Entity.cpp.i
+
+source/Entity/Entity.s: source/Entity/Entity.cpp.s
+
+.PHONY : source/Entity/Entity.s
+
+# target to generate assembly for a file
+source/Entity/Entity.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.s
+.PHONY : source/Entity/Entity.cpp.s
+
+source/Entity/EntityManager.o: source/Entity/EntityManager.cpp.o
+
+.PHONY : source/Entity/EntityManager.o
+
+# target to build an object file
+source/Entity/EntityManager.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o
+.PHONY : source/Entity/EntityManager.cpp.o
+
+source/Entity/EntityManager.i: source/Entity/EntityManager.cpp.i
+
+.PHONY : source/Entity/EntityManager.i
+
+# target to preprocess a source file
+source/Entity/EntityManager.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.i
+.PHONY : source/Entity/EntityManager.cpp.i
+
+source/Entity/EntityManager.s: source/Entity/EntityManager.cpp.s
+
+.PHONY : source/Entity/EntityManager.s
+
+# target to generate assembly for a file
+source/Entity/EntityManager.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.s
+.PHONY : source/Entity/EntityManager.cpp.s
+
+source/Events/Event.o: source/Events/Event.cpp.o
+
+.PHONY : source/Events/Event.o
+
+# target to build an object file
+source/Events/Event.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o
+.PHONY : source/Events/Event.cpp.o
+
+source/Events/Event.i: source/Events/Event.cpp.i
+
+.PHONY : source/Events/Event.i
+
+# target to preprocess a source file
+source/Events/Event.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/Event.cpp.i
+.PHONY : source/Events/Event.cpp.i
+
+source/Events/Event.s: source/Events/Event.cpp.s
+
+.PHONY : source/Events/Event.s
+
+# target to generate assembly for a file
+source/Events/Event.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/Event.cpp.s
+.PHONY : source/Events/Event.cpp.s
+
+source/Events/EventManager.o: source/Events/EventManager.cpp.o
+
+.PHONY : source/Events/EventManager.o
+
+# target to build an object file
+source/Events/EventManager.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o
+.PHONY : source/Events/EventManager.cpp.o
+
+source/Events/EventManager.i: source/Events/EventManager.cpp.i
+
+.PHONY : source/Events/EventManager.i
+
+# target to preprocess a source file
+source/Events/EventManager.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.i
+.PHONY : source/Events/EventManager.cpp.i
+
+source/Events/EventManager.s: source/Events/EventManager.cpp.s
+
+.PHONY : source/Events/EventManager.s
+
+# target to generate assembly for a file
+source/Events/EventManager.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.s
+.PHONY : source/Events/EventManager.cpp.s
+
+source/Events/MouseMoveEvent.o: source/Events/MouseMoveEvent.cpp.o
+
+.PHONY : source/Events/MouseMoveEvent.o
+
+# target to build an object file
+source/Events/MouseMoveEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o
+.PHONY : source/Events/MouseMoveEvent.cpp.o
+
+source/Events/MouseMoveEvent.i: source/Events/MouseMoveEvent.cpp.i
+
+.PHONY : source/Events/MouseMoveEvent.i
+
+# target to preprocess a source file
+source/Events/MouseMoveEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.i
+.PHONY : source/Events/MouseMoveEvent.cpp.i
+
+source/Events/MouseMoveEvent.s: source/Events/MouseMoveEvent.cpp.s
+
+.PHONY : source/Events/MouseMoveEvent.s
+
+# target to generate assembly for a file
+source/Events/MouseMoveEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.s
+.PHONY : source/Events/MouseMoveEvent.cpp.s
+
+source/GameStateManager.o: source/GameStateManager.cpp.o
+
+.PHONY : source/GameStateManager.o
+
+# target to build an object file
+source/GameStateManager.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o
+.PHONY : source/GameStateManager.cpp.o
+
+source/GameStateManager.i: source/GameStateManager.cpp.i
+
+.PHONY : source/GameStateManager.i
+
+# target to preprocess a source file
+source/GameStateManager.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.i
+.PHONY : source/GameStateManager.cpp.i
+
+source/GameStateManager.s: source/GameStateManager.cpp.s
+
+.PHONY : source/GameStateManager.s
+
+# target to generate assembly for a file
+source/GameStateManager.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.s
+.PHONY : source/GameStateManager.cpp.s
+
+source/ShaderHandler.o: source/ShaderHandler.cpp.o
+
+.PHONY : source/ShaderHandler.o
+
+# target to build an object file
+source/ShaderHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o
+.PHONY : source/ShaderHandler.cpp.o
+
+source/ShaderHandler.i: source/ShaderHandler.cpp.i
+
+.PHONY : source/ShaderHandler.i
+
+# target to preprocess a source file
+source/ShaderHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.i
+.PHONY : source/ShaderHandler.cpp.i
+
+source/ShaderHandler.s: source/ShaderHandler.cpp.s
+
+.PHONY : source/ShaderHandler.s
+
+# target to generate assembly for a file
+source/ShaderHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.s
+.PHONY : source/ShaderHandler.cpp.s
+
+source/Systems/System.o: source/Systems/System.cpp.o
+
+.PHONY : source/Systems/System.o
+
+# target to build an object file
+source/Systems/System.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o
+.PHONY : source/Systems/System.cpp.o
+
+source/Systems/System.i: source/Systems/System.cpp.i
+
+.PHONY : source/Systems/System.i
+
+# target to preprocess a source file
+source/Systems/System.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Systems/System.cpp.i
+.PHONY : source/Systems/System.cpp.i
+
+source/Systems/System.s: source/Systems/System.cpp.s
+
+.PHONY : source/Systems/System.s
+
+# target to generate assembly for a file
+source/Systems/System.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Systems/System.cpp.s
+.PHONY : source/Systems/System.cpp.s
+
+source/Systems/SystemManager.o: source/Systems/SystemManager.cpp.o
+
+.PHONY : source/Systems/SystemManager.o
+
+# target to build an object file
+source/Systems/SystemManager.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o
+.PHONY : source/Systems/SystemManager.cpp.o
+
+source/Systems/SystemManager.i: source/Systems/SystemManager.cpp.i
+
+.PHONY : source/Systems/SystemManager.i
+
+# target to preprocess a source file
+source/Systems/SystemManager.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.i
+.PHONY : source/Systems/SystemManager.cpp.i
+
+source/Systems/SystemManager.s: source/Systems/SystemManager.cpp.s
+
+.PHONY : source/Systems/SystemManager.s
+
+# target to generate assembly for a file
+source/Systems/SystemManager.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.s
+.PHONY : source/Systems/SystemManager.cpp.s
+
+source/main.o: source/main.cpp.o
+
+.PHONY : source/main.o
+
+# target to build an object file
+source/main.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/main.cpp.o
+.PHONY : source/main.cpp.o
+
+source/main.i: source/main.cpp.i
+
+.PHONY : source/main.i
+
+# target to preprocess a source file
+source/main.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/main.cpp.i
+.PHONY : source/main.cpp.i
+
+source/main.s: source/main.cpp.s
+
+.PHONY : source/main.s
+
+# target to generate assembly for a file
+source/main.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/main.cpp.s
+.PHONY : source/main.cpp.s
+
+vendor/glad/src/gl.o: vendor/glad/src/gl.c.o
+
+.PHONY : vendor/glad/src/gl.o
+
+# target to build an object file
+vendor/glad/src/gl.c.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o
+.PHONY : vendor/glad/src/gl.c.o
+
+vendor/glad/src/gl.i: vendor/glad/src/gl.c.i
+
+.PHONY : vendor/glad/src/gl.i
+
+# target to preprocess a source file
+vendor/glad/src/gl.c.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.i
+.PHONY : vendor/glad/src/gl.c.i
+
+vendor/glad/src/gl.s: vendor/glad/src/gl.c.s
+
+.PHONY : vendor/glad/src/gl.s
+
+# target to generate assembly for a file
+vendor/glad/src/gl.c.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.s
+.PHONY : vendor/glad/src/gl.c.s
 
 # Help Target
 help:
@@ -158,10 +468,44 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... game_engine"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... tears_engine"
+	@echo "... glfw"
+	@echo "... source/Components/Component.o"
+	@echo "... source/Components/Component.i"
+	@echo "... source/Components/Component.s"
+	@echo "... source/Entity/Entity.o"
+	@echo "... source/Entity/Entity.i"
+	@echo "... source/Entity/Entity.s"
+	@echo "... source/Entity/EntityManager.o"
+	@echo "... source/Entity/EntityManager.i"
+	@echo "... source/Entity/EntityManager.s"
+	@echo "... source/Events/Event.o"
+	@echo "... source/Events/Event.i"
+	@echo "... source/Events/Event.s"
+	@echo "... source/Events/EventManager.o"
+	@echo "... source/Events/EventManager.i"
+	@echo "... source/Events/EventManager.s"
+	@echo "... source/Events/MouseMoveEvent.o"
+	@echo "... source/Events/MouseMoveEvent.i"
+	@echo "... source/Events/MouseMoveEvent.s"
+	@echo "... source/GameStateManager.o"
+	@echo "... source/GameStateManager.i"
+	@echo "... source/GameStateManager.s"
+	@echo "... source/ShaderHandler.o"
+	@echo "... source/ShaderHandler.i"
+	@echo "... source/ShaderHandler.s"
+	@echo "... source/Systems/System.o"
+	@echo "... source/Systems/System.i"
+	@echo "... source/Systems/System.s"
+	@echo "... source/Systems/SystemManager.o"
+	@echo "... source/Systems/SystemManager.i"
+	@echo "... source/Systems/SystemManager.s"
+	@echo "... source/main.o"
+	@echo "... source/main.i"
+	@echo "... source/main.s"
+	@echo "... vendor/glad/src/gl.o"
+	@echo "... vendor/glad/src/gl.i"
+	@echo "... vendor/glad/src/gl.s"
 .PHONY : help
 
 

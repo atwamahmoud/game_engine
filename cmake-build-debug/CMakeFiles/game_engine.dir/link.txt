@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/game_engine.dir/main.cpp.o  -o game_engine 
