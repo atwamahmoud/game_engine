@@ -86,7 +86,7 @@ Program::Program() {
 
     glGenVertexArrays(1, &vertex_array);        // Ask GL to create a vertex array to easily create a triangle.
 
-    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);       // Set the clear color
+    glClearColor(0.0f, 0.0f, 1.0f, 1.0f);       // Set the clear color
 }
 
 void Program::draw() {
