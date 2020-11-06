@@ -8,17 +8,26 @@ CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o: ../vendor/glad/src/gl.c
 CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o: ../source/Components/Component.cpp
 CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o: ../source/Components/Component.h
 
+CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: ../source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: ../source/Entity/Entity.cpp
 CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: ../source/Entity/Entity.h
 CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: ../source/common.h
 
+CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: ../source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: ../source/Entity/Entity.h
 CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: ../source/Entity/EntityManager.cpp
 CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: ../source/Entity/EntityManager.h
 CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: ../source/common.h
 
+CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../source/Entity/Entity.h
 CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../source/Entity/EntityManager.h
@@ -26,6 +35,9 @@ CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../source/Events/Event.cp
 CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../source/Events/Event.h
 CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: ../source/common.h
 
+CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../source/Entity/Entity.h
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../source/Entity/EntityManager.h
@@ -35,6 +47,9 @@ CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../source/Events/E
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../source/Events/MouseMoveEvent.h
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: ../source/common.h
 
+CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: ../source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: ../source/Entity/Entity.h
 CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: ../source/Entity/EntityManager.h
@@ -46,9 +61,16 @@ CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: ../source/common
 CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o: ../source/GameStateManager.cpp
 CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o: ../source/GameStateManager.h
 
-CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o: ../source/ShaderHandler.cpp
-CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o: ../source/ShaderHandler.h
+CMakeFiles/tears_engine.dir/source/Program.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Program.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Program.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
+CMakeFiles/tears_engine.dir/source/Program.cpp.o: ../source/Program.cpp
+CMakeFiles/tears_engine.dir/source/Program.cpp.o: ../source/Program.h
+CMakeFiles/tears_engine.dir/source/Program.cpp.o: ../source/common.h
 
+CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../source/Entity/Entity.h
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../source/Entity/EntityManager.h
@@ -59,6 +81,9 @@ CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../source/Systems/Syste
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../source/Systems/System.h
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: ../source/common.h
 
+CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: ../vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: ../vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: ../vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: ../source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: ../source/Entity/Entity.h
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: ../source/Entity/EntityManager.h
@@ -74,6 +99,7 @@ CMakeFiles/tears_engine.dir/source/main.cpp.o: ../source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: ../source/Entity/Entity.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: ../source/Entity/EntityManager.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: ../source/Events/Event.h
+CMakeFiles/tears_engine.dir/source/main.cpp.o: ../source/Program.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: ../source/common.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: ../source/main.cpp
 

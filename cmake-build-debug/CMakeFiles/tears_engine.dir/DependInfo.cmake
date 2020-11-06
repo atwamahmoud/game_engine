@@ -23,7 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mahmoud/CLionProjects/tears_engine/source/Events/EventManager.cpp" "/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o"
   "/home/mahmoud/CLionProjects/tears_engine/source/Events/MouseMoveEvent.cpp" "/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o"
   "/home/mahmoud/CLionProjects/tears_engine/source/GameStateManager.cpp" "/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o"
-  "/home/mahmoud/CLionProjects/tears_engine/source/ShaderHandler.cpp" "/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o"
+  "/home/mahmoud/CLionProjects/tears_engine/source/Program.cpp" "/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir/source/Program.cpp.o"
   "/home/mahmoud/CLionProjects/tears_engine/source/Systems/System.cpp" "/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o"
   "/home/mahmoud/CLionProjects/tears_engine/source/Systems/SystemManager.cpp" "/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o"
   "/home/mahmoud/CLionProjects/tears_engine/source/main.cpp" "/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir/source/main.cpp.o"

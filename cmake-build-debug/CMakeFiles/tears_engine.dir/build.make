@@ -70,18 +70,18 @@ CMakeFiles/tears_engine.dir/source/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/CLionProjects/tears_engine/source/main.cpp -o CMakeFiles/tears_engine.dir/source/main.cpp.s
 
-CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o: CMakeFiles/tears_engine.dir/flags.make
-CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o: ../source/ShaderHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o -c /home/mahmoud/CLionProjects/tears_engine/source/ShaderHandler.cpp
+CMakeFiles/tears_engine.dir/source/Program.cpp.o: CMakeFiles/tears_engine.dir/flags.make
+CMakeFiles/tears_engine.dir/source/Program.cpp.o: ../source/Program.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tears_engine.dir/source/Program.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Program.cpp.o -c /home/mahmoud/CLionProjects/tears_engine/source/Program.cpp
 
-CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mahmoud/CLionProjects/tears_engine/source/ShaderHandler.cpp > CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.i
+CMakeFiles/tears_engine.dir/source/Program.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/Program.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mahmoud/CLionProjects/tears_engine/source/Program.cpp > CMakeFiles/tears_engine.dir/source/Program.cpp.i
 
-CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/CLionProjects/tears_engine/source/ShaderHandler.cpp -o CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.s
+CMakeFiles/tears_engine.dir/source/Program.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Program.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/CLionProjects/tears_engine/source/Program.cpp -o CMakeFiles/tears_engine.dir/source/Program.cpp.s
 
 CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o: ../vendor/glad/src/gl.c
@@ -216,7 +216,7 @@ CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.s: cmake_force
 # Object files for target tears_engine
 tears_engine_OBJECTS = \
 "CMakeFiles/tears_engine.dir/source/main.cpp.o" \
-"CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o" \
+"CMakeFiles/tears_engine.dir/source/Program.cpp.o" \
 "CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o" \
 "CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o" \
 "CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o" \
@@ -232,7 +232,7 @@ tears_engine_OBJECTS = \
 tears_engine_EXTERNAL_OBJECTS =
 
 tears_engine: CMakeFiles/tears_engine.dir/source/main.cpp.o
-tears_engine: CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o
+tears_engine: CMakeFiles/tears_engine.dir/source/Program.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o
 tears_engine: CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o

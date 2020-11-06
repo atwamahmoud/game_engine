@@ -2,6 +2,10 @@
 // Created by mahmoud on ٣‏/١١‏/٢٠٢٠.
 //
 #include <chrono>
+#include <iostream>
+#include <fstream>
+#include <glad/gl.h>
+#include <GLFW/glfw3.h>
 
 #ifndef TEARS_ENGINE_COMMON_H
 #define TEARS_ENGINE_COMMON_H
@@ -16,6 +20,5 @@ inline double getTime() {
 enum EVENTS {
     MOUSE_MOVE,
 };
-
 
 #endif //TEARS_ENGINE_COMMON_H

@@ -189,10 +189,10 @@
 		<Unit filename="/home/mahmoud/CLionProjects/tears_engine/source/GameStateManager.h">
 			<Option target="tears_engine"/>
 		</Unit>
-		<Unit filename="/home/mahmoud/CLionProjects/tears_engine/source/ShaderHandler.cpp">
+		<Unit filename="/home/mahmoud/CLionProjects/tears_engine/source/Program.cpp">
 			<Option target="tears_engine"/>
 		</Unit>
-		<Unit filename="/home/mahmoud/CLionProjects/tears_engine/source/ShaderHandler.h">
+		<Unit filename="/home/mahmoud/CLionProjects/tears_engine/source/Program.h">
 			<Option target="tears_engine"/>
 		</Unit>
 		<Unit filename="/home/mahmoud/CLionProjects/tears_engine/source/Systems/System.cpp">

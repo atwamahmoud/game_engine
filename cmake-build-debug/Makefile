@@ -325,32 +325,32 @@ source/GameStateManager.cpp.s:
 	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.s
 .PHONY : source/GameStateManager.cpp.s
 
-source/ShaderHandler.o: source/ShaderHandler.cpp.o
+source/Program.o: source/Program.cpp.o
 
-.PHONY : source/ShaderHandler.o
+.PHONY : source/Program.o
 
 # target to build an object file
-source/ShaderHandler.cpp.o:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.o
-.PHONY : source/ShaderHandler.cpp.o
+source/Program.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Program.cpp.o
+.PHONY : source/Program.cpp.o
 
-source/ShaderHandler.i: source/ShaderHandler.cpp.i
+source/Program.i: source/Program.cpp.i
 
-.PHONY : source/ShaderHandler.i
+.PHONY : source/Program.i
 
 # target to preprocess a source file
-source/ShaderHandler.cpp.i:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.i
-.PHONY : source/ShaderHandler.cpp.i
+source/Program.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Program.cpp.i
+.PHONY : source/Program.cpp.i
 
-source/ShaderHandler.s: source/ShaderHandler.cpp.s
+source/Program.s: source/Program.cpp.s
 
-.PHONY : source/ShaderHandler.s
+.PHONY : source/Program.s
 
 # target to generate assembly for a file
-source/ShaderHandler.cpp.s:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/ShaderHandler.cpp.s
-.PHONY : source/ShaderHandler.cpp.s
+source/Program.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Program.cpp.s
+.PHONY : source/Program.cpp.s
 
 source/Systems/System.o: source/Systems/System.cpp.o
 
@@ -491,9 +491,9 @@ help:
 	@echo "... source/GameStateManager.o"
 	@echo "... source/GameStateManager.i"
 	@echo "... source/GameStateManager.s"
-	@echo "... source/ShaderHandler.o"
-	@echo "... source/ShaderHandler.i"
-	@echo "... source/ShaderHandler.s"
+	@echo "... source/Program.o"
+	@echo "... source/Program.i"
+	@echo "... source/Program.s"
 	@echo "... source/Systems/System.o"
 	@echo "... source/Systems/System.i"
 	@echo "... source/Systems/System.s"

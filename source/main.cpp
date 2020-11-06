@@ -1,8 +1,8 @@
 #include <iostream>
-#include <glad/gl.h>
-#include <GLFW/glfw3.h>
+#include <zconf.h>
 #include "common.h"
 #include "Events/Event.h"
+#include "Program.h"
 
 static void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos);
 static void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
@@ -39,26 +39,32 @@ int main() {
     gladLoadGL(glfwGetProcAddress);
 
 
-    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+//    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+//    glClear(GL_COLOR_BUFFER_BIT);
+//
+//    glfwSetCursorPosCallback(window, cursorPositionCallback);
+//    glfwSetKeyCallback(window, keyCallback);
 
-    glfwSetCursorPosCallback(window, cursorPositionCallback);
-    glfwSetKeyCallback(window, keyCallback);
 
+
+    Program prog;
+    prog.draw();
     //Game Loop
 
     double startTime;
     double endTime = getTime();
+    prog.draw();
 
     while(!glfwWindowShouldClose(window)){
-        startTime = getTime();
-        //Events...
-        glfwPollEvents();
-        //delta...
-        double delta = startTime - endTime;
-//        std::cout<<"Time Taken to draw previous frame is: "<<delta<<"\n";
-        //Draw...
-        endTime = getTime();
+        prog.draw();
+//        startTime = getTime();
+//        //Events...
+//        glfwPollEvents();
+//        //delta...
+//        double delta = startTime - endTime;
+////        std::cout<<"Time Taken to draw previous frame is: "<<delta<<"\n";
+//        //Draw...
+//        endTime = getTime();
     }
 
     return 0;
