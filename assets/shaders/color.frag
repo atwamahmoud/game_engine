@@ -37,7 +37,32 @@ float Smiley(vec2 uv, vec2 p, float size) {
     // Just a constant
     #define PI 3.1415926535897932384626433832795
 
+float square(vec2 r, vec2 bottomLeft, float side) {
+    vec2 p = r - bottomLeft;
+    return ( p.x > 0.0 && p.x < side && p.y>0.0 && p.y < side ) ? 1.0 : 0.0;
+}
 
+float character(vec2 r, vec2 bottomLeft, float charCode, float squareSide) {
+    vec2 p = r - bottomLeft;
+    float ret = 0.0;
+    float num, quotient, remainder, divider;
+    float x, y;
+    num = charCode;
+    for(int i=0; i<20; i++) {
+        float boxNo = float(19-i);
+        divider = pow(2., boxNo);
+        quotient = floor(num / divider);
+        remainder = num - quotient*divider;
+        num = remainder;
+
+        y = floor(boxNo/4.0);
+        x = boxNo - y*4.0;
+        if(quotient == 1.) {
+            ret += square( p, squareSide*vec2(x, y), squareSide );
+        }
+    }
+    return ret;
+}
 float drawCircle(vec2 position, float radius) {
     return step(length(position - 0.5), radius);
 }
@@ -120,8 +145,29 @@ void main() {
         vec4 inverseMouthColor = vec4(vec3(inverseMouth), 1.0);
 //        frag_color = pacmanColor * inverseEyeColor;
         frag_color = pacmanColor * inverseEyeColor * inverseMouthColor * vec4(color, 1.0);
-    } else {
-        //@Hessuin Ehab
+    } else if(shape == 4) {
+
+        float G = 990623.; // compressed characters :-)
+
+
+        vec2 r = (gl_FragCoord.xy - 0.5*iResolution.xy) / iResolution.y;
+
+        float xMax = 0.5*iResolution.x/iResolution.y;
+        float letterWidth = 2.0*xMax*0.9/4.0;
+        float side = letterWidth/4.;
+        float space = 2.0*xMax*0.1/5.0;
+
+
+        float maskG = character(r, vec2((mouse.x-0.5*iResolution.x)/iResolution.y, -(mouse.y-0.5*iResolution.y)/iResolution.y), G, side);
+
+        float i255 = 0.00392156862;
+        vec3 blue = vec3(0., 0., 0.);
+        vec3 col = vec3(255., 255., 255.)*i255;
+
+        vec3 pixel = blue;
+        pixel = mix(pixel, col, maskG);
+
+        frag_color = vec4(pixel, 1.0);
     }
     // Convert RGB to RGBA (in other words, add an alpha value).
 
