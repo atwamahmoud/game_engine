@@ -88,8 +88,6 @@ Program::Program() {
 
 void Program::draw(MousePosition mousePosition) {
 
-    if(mousePosition.x == prevMousePosition.x
-        && mousePosition.y == prevMousePosition.y ) return;
     prevMousePosition = mousePosition;
 
     glm::vec2 scale = glm::vec2(1,1);

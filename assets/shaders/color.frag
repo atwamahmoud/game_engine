@@ -79,8 +79,7 @@ void main() {
 
         col = vec3(1., 1., 1.)* mask;
         frag_color = vec4(col, 1.0);
-    }
-    else if (shape == 2){
+    } else if (shape == 2) {
         frag_color = vec4(color, 1.0);
         // If flickering, multiply it with a sinusoidal wave that oscillates over time
         vec2 uv= (gl_FragCoord.xy-iResolution.xy*.5)/iResolution.y;//(mouse/255)*
