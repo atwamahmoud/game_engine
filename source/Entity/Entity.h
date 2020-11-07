@@ -15,10 +15,11 @@ class Entity {
     Entity();
     int id;
 public:
-    std::unordered_map<std::string, Component> components;
-    void addComponent(Component);
+    std::unordered_map<std::string, Component*> components;
+    void addComponent(Component*, string);
     void removeComponent(std::string);
     int getId();
+    ~Entity();
 };
 
 

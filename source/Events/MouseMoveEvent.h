@@ -10,14 +10,17 @@
 #include "../common.h"
 
 struct MousePosition {
-    int x;
-    int y;
+    float x;
+    float y;
 };
 
-class MouseMoveEvent: public Event<MousePosition> {
+class MouseMoveEvent: private Event<MousePosition> {
     EVENTS name = MOUSE_MOVE;
 public:
     MouseMoveEvent();
+    void removeCallback(int);
+    void trigger(MousePosition, EntityManager&);
+    int addCallback(function<void(EntityManager &, MousePosition)>);
 };
 
 

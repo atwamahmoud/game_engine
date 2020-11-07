@@ -9,11 +9,14 @@
 #include <vector>
 #include "Event.h"
 #include "MouseMoveEvent.h"
-
+#include "ShapeChangeEvent.h"
 class EventManager {
 
 public:
-    MouseMoveEvent e;
+    MouseMoveEvent mouseEvent = MouseMoveEvent();
+    MousePosition mousePosition;
+    int shape = 0;
+    ShapeChangeEvent shapeChangeEvent = ShapeChangeEvent();
 };
 
 

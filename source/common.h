@@ -10,6 +10,9 @@
 #ifndef TEARS_ENGINE_COMMON_H
 #define TEARS_ENGINE_COMMON_H
 
+#define WINDOW_WIDTH 640
+#define WINDOW_HEIGHT 480
+
 using namespace std;
 using namespace std::chrono;
 
@@ -19,6 +22,7 @@ inline double getTime() {
 
 enum EVENTS {
     MOUSE_MOVE,
+    SHAPE_CHANGE
 };
 
 #endif //TEARS_ENGINE_COMMON_H

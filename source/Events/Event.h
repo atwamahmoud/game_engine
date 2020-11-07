@@ -13,10 +13,12 @@
 template <typename T>
 class Event {
     friend class EventManager;
+protected:
     EVENTS name;
     int count = 0;
     std::unordered_map<int, std::function<void(EntityManager&, T)>> callbacks;
 public:
+//    Event();
     int addCallback(std::function<void(EntityManager&, T)>);
     void removeCallback(int);
     void trigger(T, EntityManager&);

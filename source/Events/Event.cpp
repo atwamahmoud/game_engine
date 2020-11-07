@@ -4,6 +4,8 @@
 
 #include "Event.h"
 
+//template <typename T>
+//Event<T>::Event() = default;
 
 template<typename T>
 int Event<T>::addCallback(std::function<void(EntityManager&, T)> func) {

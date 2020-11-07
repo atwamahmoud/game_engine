@@ -1,7 +1,3 @@
-//
-// Created by Mahmoud Atwa on 02/11/2020
-//
-
 #include "Program.h"
 
 string readFile(string filename) {
@@ -47,7 +43,7 @@ void checkShaderCompilationErrors(GLuint shader) {
     }
 }
 
-void Program::attachShader(string filename, GLenum type) {
+void Program::attachShader(string filename, GLenum type) const {
 
     // 1. Reads the shader from file, compiles it,
     std::string source_code = readFile(filename);
@@ -78,32 +74,94 @@ Program::Program() {
     program = glCreateProgram();    // We ask GL to create a program for us and return a uint that we will use it by.
     // (act as a pointer to the created program).
 
-    attachShader("./assets/shaders/ex02_shader_introduction/triangle.vert", GL_VERTEX_SHADER);   // read the vertex shader and attach it to the program.
-    attachShader("./assets/shaders/ex02_shader_introduction/red.frag", GL_FRAGMENT_SHADER);      // read the fragment shader and attach it to the program.
+    attachShader("./assets/shaders/quad.vert", GL_VERTEX_SHADER);   // read the vertex shader and attach it to the program.
+    attachShader("./assets/shaders/color.frag", GL_FRAGMENT_SHADER);      // read the fragment shader and attach it to the program.
 
     glLinkProgram(program);                     // Link the vertex and fragment shader together.
     checkProgramLinkingErrors(program);         // Check if there is any link errors between the fragment shader and vertex shader.
 
     glGenVertexArrays(1, &vertex_array);        // Ask GL to create a vertex array to easily create a triangle.
 
-    glClearColor(0.0f, 0.0f, 1.0f, 1.0f);       // Set the clear color
+
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
-void Program::draw() {
-    glClear(GL_COLOR_BUFFER_BIT);               // Clear the frame buffer (back buffer of the window)
-    glUseProgram(program);                      // Ask GL to use this program for the upcoming operations.
-    // Every shader and rendering call after glUseProgram will now use this program object (and the shaders).
+void Program::draw(MousePosition mousePosition) {
 
-    glBindVertexArray(vertex_array);            // Binding is like selecting which object to use.
-    // Note that we need to bind a vertex array to draw
-    // Even if that vertex array does not send any data down the pipeline
+    prevMousePosition = mousePosition;
 
-    // Sends vertices down the pipeline for drawing
-    // Parameters:
-    // mode (GLenum): what primitives to draw. GL_TRIANGLES will combine each 3 vertices into a triangle.
-    // first (GLint): the index of the first vertex to draw. It is useless here since we are not receiving data through the vertex array.
-    // count (GLsizei): How many vertices to send to the pipeline. Since we are sending 3 vertices only, only one triangle will be drawn.
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glm::vec2 scale = glm::vec2(1,1);
+    glm::vec2 translation = glm::vec2(0,0);
+    glm::vec3 color = glm::vec3(1, 0, 0);
+    bool vibrate = false, flicker = false;
 
-    glBindVertexArray(0);                       // Unbind the buffer.
+    glClear(GL_COLOR_BUFFER_BIT);
+    glUseProgram(program);
+
+    GLuint scale_uniform_location = glGetUniformLocation(program, "scale");
+    glUniform2f(scale_uniform_location, scale.x, scale.y);
+    GLuint translation_uniform_location = glGetUniformLocation(program, "translation");
+    glUniform2f(translation_uniform_location, translation.x, translation.y);
+    GLuint color_uniform_location = glGetUniformLocation(program, "color");
+    glUniform3f(color_uniform_location, color.r, color.g, color.b);
+
+    GLuint time_uniform_location = glGetUniformLocation(program, "time");
+    glUniform1f(time_uniform_location, glfwGetTime());
+    GLuint vibrate_uniform_location = glGetUniformLocation(program, "vibrate");
+    glUniform1i(vibrate_uniform_location, vibrate);
+    GLuint flicker_uniform_location = glGetUniformLocation(program, "flicker");
+    glUniform1i(flicker_uniform_location, flicker);
+
+    GLuint shape_uniform_location = glGetUniformLocation(program, "shape");
+    glUniform1i(shape_uniform_location, shape);
+
+    GLint loc = glGetUniformLocation(program, "iResolution");
+    glUniform2f(loc, WINDOW_WIDTH, WINDOW_HEIGHT);//ah
+    GLuint Mouse_uniform_location = glGetUniformLocation(program, "mouse");
+
+    glUniform2f(Mouse_uniform_location, mousePosition.x, mousePosition.y); // -320 => 0
+
+
+    glBindVertexArray(vertex_array);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
+    glBindVertexArray(0);
+}
+
+void Program::draw(int shape) {
+
+    this->shape = shape;
+    glm::vec2 scale = glm::vec2(1,1);
+    glm::vec2 translation = glm::vec2(0,0);
+    glm::vec3 color = glm::vec3(1, 0, 0);
+    bool vibrate = false, flicker = false;
+
+    glClear(GL_COLOR_BUFFER_BIT);
+    glUseProgram(program);
+
+    GLuint scale_uniform_location = glGetUniformLocation(program, "scale");
+    glUniform2f(scale_uniform_location, scale.x, scale.y);
+    GLuint translation_uniform_location = glGetUniformLocation(program, "translation");
+    glUniform2f(translation_uniform_location, translation.x, translation.y);
+    GLuint color_uniform_location = glGetUniformLocation(program, "color");
+    glUniform3f(color_uniform_location, color.r, color.g, color.b);
+
+    GLuint time_uniform_location = glGetUniformLocation(program, "time");
+    glUniform1f(time_uniform_location, glfwGetTime());
+    GLuint vibrate_uniform_location = glGetUniformLocation(program, "vibrate");
+    glUniform1i(vibrate_uniform_location, vibrate);
+    GLuint flicker_uniform_location = glGetUniformLocation(program, "flicker");
+    glUniform1i(flicker_uniform_location, flicker);
+
+    GLuint shape_uniform_location = glGetUniformLocation(program, "shape");
+    glUniform1i(shape_uniform_location, shape);
+
+    GLint loc = glGetUniformLocation(program, "iResolution");
+    glUniform2f(loc, WINDOW_WIDTH, WINDOW_HEIGHT);//ah
+    GLuint Mouse_uniform_location = glGetUniformLocation(program, "mouse");
+
+    glUniform2f(Mouse_uniform_location, prevMousePosition.x, prevMousePosition.y); // -320 => 0
+
+    glBindVertexArray(vertex_array);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
+    glBindVertexArray(0);
 }

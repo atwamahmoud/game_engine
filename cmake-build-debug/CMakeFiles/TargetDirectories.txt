@@ -1,8 +1,8 @@
-/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir
-/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/vendor/glfw/CMakeFiles/rebuild_cache.dir
-/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/vendor/glfw/CMakeFiles/edit_cache.dir
-/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/vendor/glfw/src/CMakeFiles/rebuild_cache.dir
-/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/vendor/glfw/src/CMakeFiles/edit_cache.dir
-/home/mahmoud/CLionProjects/tears_engine/cmake-build-debug/vendor/glfw/src/CMakeFiles/glfw.dir
+/home/atwa/school/tears_engine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/atwa/school/tears_engine/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/atwa/school/tears_engine/cmake-build-debug/CMakeFiles/tears_engine.dir
+/home/atwa/school/tears_engine/cmake-build-debug/vendor/glfw/CMakeFiles/rebuild_cache.dir
+/home/atwa/school/tears_engine/cmake-build-debug/vendor/glfw/CMakeFiles/edit_cache.dir
+/home/atwa/school/tears_engine/cmake-build-debug/vendor/glfw/src/CMakeFiles/rebuild_cache.dir
+/home/atwa/school/tears_engine/cmake-build-debug/vendor/glfw/src/CMakeFiles/edit_cache.dir
+/home/atwa/school/tears_engine/cmake-build-debug/vendor/glfw/src/CMakeFiles/glfw.dir

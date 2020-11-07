@@ -7,11 +7,17 @@
 
 
 #include <unordered_map>
-#include "../Events/Event.h"
+#include "../Events/EventManager.h"
+#include "System.h"
 
 class SystemManager {
-//    std::unordered_map<EVENTS, Event> events;
-
+    EventManager* eventManager;
+    EntityManager* entityManager;
+    vector<System*> systems;
+public:
+    SystemManager(EventManager*, EntityManager*);
+    void init();
+    void update(double);
 };
 
 

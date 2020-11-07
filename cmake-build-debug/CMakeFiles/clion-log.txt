@@ -1,5 +1,5 @@
-/home/mahmoud/clion-2020.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/mahmoud/CLionProjects/tears_engine
+/snap/clion/129/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/atwa/school/tears_engine
 -- Using X11 for window creation
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/mahmoud/CLionProjects/tears_engine/cmake-build-debug
+-- Build files have been written to: /home/atwa/school/tears_engine/cmake-build-debug

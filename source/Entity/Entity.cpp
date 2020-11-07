@@ -4,10 +4,9 @@
 
 #include "Entity.h"
 
-void Entity::addComponent(Component component) {
+void Entity::addComponent(Component* component, string name) {
     //Doesn't use [] operator to prevent adding new element
     //See: http://www.cplusplus.com/reference/unordered_map/unordered_map/operator[]/
-    const std::string name = typeid(component).name();
     if(this->components.find(name) != this->components.end()) {
         throw invalid_argument("Components with the same name already exists");
     }
@@ -23,4 +22,12 @@ int Entity::getId() {
 }
 
 Entity::Entity() {
+}
+
+
+Entity::~Entity() {
+    auto iterator = this->components.begin();
+    for(; iterator != this->components.end(); ++iterator) {
+        delete iterator->second;
+    }
 }

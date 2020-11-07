@@ -1,9 +1,11 @@
 #include <iostream>
-#include <zconf.h>
 #include "common.h"
-#include "Events/Event.h"
 #include "Program.h"
-
+#include "Events/EventManager.h"
+#include "Systems/SystemManager.h"
+#include "Components/Position.h"
+#include "Components/RenderComponent.h"
+#include <unistd.h>
 static void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos);
 static void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
 // This function will be used to log errors thrown by GLFW
@@ -11,17 +13,21 @@ void glfw_error_callback(int error, const char* description){
     std::cerr << "GLFW Error: " << error << ": " << description << std::endl;
 }
 
-int main() {
 
+EventManager eventManager;
+EntityManager entityManager;
+SystemManager systemManager(&eventManager, &entityManager);
+
+static GLFWwindow* init() {
     // Set the function to call when an error occurs.
     glfwSetErrorCallback(glfw_error_callback);
 
     // Initialize GLFW and exit if it failed
     if(!glfwInit()){
         std::cerr << "Failed to Initialize GLFW" << std::endl;
-        return -1;
+        return nullptr;
     }
-
+    //ah
     // Request that OpenGL is 3.3
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -56,48 +62,104 @@ int main() {
     glfwWindowHint(GLFW_REFRESH_RATE, GLFW_DONT_CARE);
 
 
-    GLFWwindow* window = glfwCreateWindow(1280, 720, "Phase 1", nullptr, nullptr);
+    GLFWwindow* window = glfwCreateWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Phase 1", nullptr, nullptr);
 
     glfwMakeContextCurrent(window);
 
     gladLoadGL(glfwGetProcAddress);
 
+    return window;
+}
 
+int main() {
+
+    GLFWwindow* window = init();
+    if(window == nullptr) {
+        return -1;
+    }
     //Game Loop
+
+    Entity* shapes = entityManager.createEntity();
+    Position* position = new Position();
+
+    shapes->addComponent(position, typeid(position).name());
+
+    RenderComponent* renderComponent = new RenderComponent(
+            "./assets/shaders/quad.vert",
+            "./assets/shaders/color.frag",
+            true,
+            "SHAPES"
+            );
+
+    shapes->addComponent(renderComponent, typeid(renderComponent).name());
 
     glfwSetCursorPosCallback(window, cursorPositionCallback);
     glfwSetKeyCallback(window, keyCallback);
 
+    glfwSwapBuffers(window);
 
     Program prog;
-    prog.draw();
 
+
+    systemManager.init();
+    glfwSwapBuffers(window);
 
     double startTime;
     double endTime = getTime();
-    prog.draw();
-    glfwSwapBuffers(window);
-    glfwPollEvents();
+
+//    eventManager.mouseEvent.addCallback([&prog, &window](EntityManager&, MousePosition pos) {
+//        prog.draw(pos);
+//        glfwSwapBuffers(window);
+//    });
+
+    eventManager.shapeChangeEvent.addCallback([&prog, &window](EntityManager&, int shape) {
+        prog.draw(shape);
+        glfwSwapBuffers(window);
+    });
 
     while(!glfwWindowShouldClose(window)){
         startTime = getTime();
-//        //Events...
-//        //delta...
         double delta = startTime - endTime;
-////        std::cout<<"Time Taken to draw previous frame is: "<<delta<<"\n";
-//        //Draw...
+        prog.draw(eventManager.mousePosition);
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+        systemManager.update(delta);
+
         endTime = getTime();
-        cout<<delta<<"\n";
-        // Swap the frame buffers
+//        usleep(1000);
     }
 
     return 0;
 }
 
 static void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos) {
-    std::cout<<"x: "<<xpos<<", y: "<<ypos<<"\n";
+    eventManager.mousePosition.x = xpos;
+    eventManager.mousePosition.y = ypos;
+    eventManager.mouseEvent.trigger(eventManager.mousePosition, entityManager);
 }
 static void keyCallback(GLFWwindow* window, int key, int scanCode, int action, int mods) {
     if(action != GLFW_PRESS) return;
+    int prevShape = eventManager.shape;
+    switch (key) {
+        case GLFW_KEY_1:
+            eventManager.shape = 1;
+            break;
+        case GLFW_KEY_2:
+            eventManager.shape = 2;
+            break;
+        case GLFW_KEY_3:
+            eventManager.shape = 3;
+            break;
+        case GLFW_KEY_4:
+            eventManager.shape = 4;
+            break;
+        default:
+            break;
+    }
+
+    if(prevShape != eventManager.shape) {
+        eventManager.shapeChangeEvent.trigger(eventManager.shape, entityManager);
+    }
+
     std::cout<<"key: "<<key<<", scan code: "<<scanCode<<", action: "<<action<<", mods: "<<mods<<"\n";
 }
