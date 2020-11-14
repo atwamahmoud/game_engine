@@ -6,7 +6,7 @@ C_FLAGS = -g -fPIC   -Wall -std=gnu99
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/atwa/school/tears_engine/vendor -I/home/atwa/school/tears_engine/vendor/glm -I/home/atwa/school/tears_engine/vendor/glfw/include -I/home/atwa/school/tears_engine/vendor/glad/include -I/home/atwa/school/tears_engine/vendor/glfw/src -I/home/atwa/school/tears_engine/cmake-build-debug/vendor/glfw/src 
+C_INCLUDES = -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glm -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glfw/include -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glad/include -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glfw/src -I/home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug/vendor/glfw/src 
 
 # Custom flags: vendor/glfw/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

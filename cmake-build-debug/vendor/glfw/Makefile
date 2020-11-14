@@ -68,10 +68,10 @@ RM = /snap/clion/129/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atwa/school/tears_engine
+CMAKE_SOURCE_DIR = /home/ahmedezzat/Desktop/Graphics/tears_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atwa/school/tears_engine/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/atwa/school/tears_engine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/atwa/school/tears_engine/cmake-build-debug/CMakeFiles /home/atwa/school/tears_engine/cmake-build-debug/vendor/glfw/CMakeFiles/progress.marks
-	cd /home/atwa/school/tears_engine/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atwa/school/tears_engine/cmake-build-debug/CMakeFiles 0
+	cd /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug/CMakeFiles /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug/vendor/glfw/CMakeFiles/progress.marks
+	cd /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/atwa/school/tears_engine/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/clean
+	cd /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,17 +117,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/atwa/school/tears_engine/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/preinstall
+	cd /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/atwa/school/tears_engine/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/preinstall
+	cd /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vendor/glfw/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/atwa/school/tears_engine/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -149,6 +149,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/atwa/school/tears_engine/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ahmedezzat/Desktop/Graphics/tears_engine/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

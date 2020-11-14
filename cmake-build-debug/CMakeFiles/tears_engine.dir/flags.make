@@ -7,11 +7,11 @@ C_FLAGS = -g
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/atwa/school/tears_engine/vendor -I/home/atwa/school/tears_engine/vendor/glm -I/home/atwa/school/tears_engine/vendor/glfw/include -I/home/atwa/school/tears_engine/vendor/glad/include 
+C_INCLUDES = -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glm -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glfw/include -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glad/include 
 
 CXX_FLAGS = -g   -std=c++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/atwa/school/tears_engine/vendor -I/home/atwa/school/tears_engine/vendor/glm -I/home/atwa/school/tears_engine/vendor/glfw/include -I/home/atwa/school/tears_engine/vendor/glad/include 
+CXX_INCLUDES = -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glm -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glfw/include -I/home/ahmedezzat/Desktop/Graphics/tears_engine/vendor/glad/include 
 

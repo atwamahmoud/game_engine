@@ -37,7 +37,32 @@ float Smiley(vec2 uv, vec2 p, float size) {
     // Just a constant
     #define PI 3.1415926535897932384626433832795
 
+float square(vec2 r, vec2 bottomLeft, float side) {
+    vec2 p = r - bottomLeft;
+    return ( p.x > 0.0 && p.x < side && p.y>0.0 && p.y < side ) ? 1.0 : 0.0;
+}
 
+float character(vec2 r, vec2 bottomLeft, float charCode, float squareSide) {
+    vec2 p = r - bottomLeft;
+    float ret = 0.0;
+    float num, quotient, remainder, divider;
+    float x, y;
+    num = charCode;
+    for(int i=0; i<20; i++) {
+        float boxNo = float(19-i);
+        divider = pow(2., boxNo);
+        quotient = floor(num / divider);
+        remainder = num - quotient*divider;
+        num = remainder;
+
+        y = floor(boxNo/4.0);
+        x = boxNo - y*4.0;
+        if(quotient == 1.) {
+            ret += square( p, squareSide*vec2(x, y), squareSide );
+        }
+    }
+    return ret;
+}
 float drawCircle(vec2 position, float radius) {
     return step(length(position - 0.5), radius);
 }
@@ -47,8 +72,8 @@ float inverseDrawCircle(vec2 pos, float radius) {
 float inverseDrawArc(vec2 pos, float radius) {
     //convert to polar coordinates
     float r = sqrt(
-        (pos.x - 0.5) * (pos.x - 0.5) +
-        (pos.y - 0.5) * (pos.y - 0.5)
+    (pos.x - 0.5) * (pos.x - 0.5) +
+    (pos.y - 0.5) * (pos.y - 0.5)
     );
     float a = atan(pos.y - 0.5, pos.x - 0.5);
     if(a < 0) {
@@ -62,11 +87,51 @@ float inverseDrawArc(vec2 pos, float radius) {
     if(r <= radius && (a >= endingAngle || a <= startingAngle)) return 0.0;
     return 1.0;
 }
+float characterG(vec2 r, vec2 MiddleLeft, float Diameter) {
+    float x, y;
+    x = r.x;
+    y = r.y;
+    float radius = Diameter/2.;
+    vec2 center = MiddleLeft.xy + vec2(radius, 0);
+
+    //vec2 a = vec2(radius/pow(2.,0.5), -radius/pow(2.,0.5)) ;
+    vec2 a = vec2(radius/pow(1.64,0.5), -radius/pow(1.64,0.5) * 0.8) ;
+    vec2 b = a.xy - vec2((radius*0.45)/pow(2.,0.5), -(radius*0.45)/pow(2.,0.5));
+
+    if(x-center.x < a.x && x-center.x > b.x && y-center.y > a.y && y-center.y < 0. )
+    {
+        return 1.;
+    }
+    else if(x-center.x < b.x && x-center.x > 0. && y-center.y > b.y && y-center.y < 0.)
+    {
+        return 1.;
+    }
+    if(pow(x-center.x, 2.) + pow(y-center.y, 2.) < pow(radius, 2.) && pow(x-center.x, 2.) + pow(y-center.y, 2.) > pow((radius) * 0.65, 2.))
+    {
+
+        if(x-center.x > 0. && y-center.y > 0.)
+        {
+            if((y-center.y) > (x-center.x))
+            return 1.;
+        }
+        else if(x-center.x > 0. && y-center.y < 0.)
+        {
+
+            //if((y-center.y) / (x-center.x) < -0.9) In case of 45 Degrees
+            //    return 1.;
+            if((y-center.y) / (x-center.x) < -0.8)
+            return 1.;
+        }
+        else
+        return 1.;
+    }
+    return 0.;
+}
 
 
 void main() {
     if(shape == 1) {
-        vec2 uv= (gl_FragCoord.xy-iResolution.xy*.5)/iResolution.y;//(mouse/255)*
+        vec2 uv= (gl_FragCoord.xy-iResolution.xy*.5)/iResolution.xy;//(mouse/255)*
 
         uv -= .5;
         uv.x *= iResolution.x/iResolution.y;
@@ -82,7 +147,7 @@ void main() {
     } else if (shape == 2) {
         frag_color = vec4(color, 1.0);
         // If flickering, multiply it with a sinusoidal wave that oscillates over time
-        vec2 uv= (gl_FragCoord.xy-iResolution.xy*.5)/iResolution.y;//(mouse/255)*
+        vec2 uv= (gl_FragCoord.xy-iResolution.xy*.5)/iResolution.xy;
         uv.x -= (mouse.x/iResolution.x-0.6f);
         uv.y += (mouse.y/iResolution.y-0.4f);
         vec3 col= vec3(0);
@@ -96,7 +161,7 @@ void main() {
         frag_color=vec4(col,1.0);
     } else if(shape == 3) {
 
-        vec2 center = (gl_FragCoord.xy-iResolution.xy*.5)/iResolution.y;;
+        vec2 center = (gl_FragCoord.xy-iResolution.xy*.5)/iResolution.xy;
         center.x -= (mouse.x/iResolution.x - 1);
         center.y += (mouse.y/iResolution.y);
 
@@ -105,24 +170,38 @@ void main() {
         float mastershape = drawCircle(center, 0.3);
 
         float inverseEye = inverseDrawCircle(
-            vec2(center.x , center.y - 0.17),
-            0.05
+        vec2(center.x , center.y - 0.17),
+        0.05
         );
 
         float inverseMouth = inverseDrawArc(
-            center,
-            0.3
+        center,
+        0.3
         );
 
         vec4 pacmanColor = vec4(vec3(mastershape), 1.0);
         vec4 inverseEyeColor = vec4(vec3(inverseEye), 1.0);
         vec4 inverseMouthColor = vec4(vec3(inverseMouth), 1.0);
-//        frag_color = pacmanColor * inverseEyeColor;
+        //        frag_color = pacmanColor * inverseEyeColor;
         frag_color = pacmanColor * inverseEyeColor * inverseMouthColor * vec4(color, 1.0);
-    } else {
-        //@Hessuin Ehab
+    } else if(shape == 4) {
+
+        vec2 r = (gl_FragCoord.xy - 0.5*iResolution.xy) / iResolution.y;
+
+        float xMax = 0.5*iResolution.x/iResolution.y;
+        float yMax = 1.;
+
+
+        float side = 0.5 * yMax;
+
+        //float maskG = character(r, vec2((iMouse.x-0.5*iResolution.x)/iResolution.y, (iMouse.y-0.5*iResolution.y)/iResolution.y), G, side);
+        float maskG = characterG(r, vec2((mouse.x-0.5*iResolution.x)/iResolution.y, -(mouse.y-0.5*iResolution.y)/iResolution.y), side);
+
+        vec3 pixel = vec3(0., 0., 0.);
+        vec3 col = vec3(255., 255., 255.);
+
+        pixel = mix(pixel, col, maskG);
+
+        frag_color = vec4(pixel, 1.0);
     }
-    // Convert RGB to RGBA (in other words, add an alpha value).
-
-
 }
