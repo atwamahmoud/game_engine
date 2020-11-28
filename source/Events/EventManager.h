@@ -5,20 +5,16 @@
 #ifndef TEARS_ENGINE_EVENTMANAGER_H
 #define TEARS_ENGINE_EVENTMANAGER_H
 
-
-#include <vector>
 #include "Event.h"
+#include "KeyboardEvent.h"
 #include "MouseMoveEvent.h"
-#include "ShapeChangeEvent.h"
+#include <vector>
 class EventManager {
 
 public:
-    MouseMoveEvent mouseEvent = MouseMoveEvent();
-    MousePosition mousePosition;
-    int shape = 0;
-    ShapeChangeEvent shapeChangeEvent = ShapeChangeEvent();
+  MouseMoveEvent mouseEvent = MouseMoveEvent();
+  MousePosition mousePosition;
+  KeyboardEvent keyboardEvent = KeyboardEvent();
 };
 
-
-
-#endif //TEARS_ENGINE_EVENTMANAGER_H
+#endif // TEARS_ENGINE_EVENTMANAGER_H

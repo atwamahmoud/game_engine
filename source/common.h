@@ -1,11 +1,11 @@
 //
 // Created by mahmoud on ٣‏/١١‏/٢٠٢٠.
 //
+#include "../vendor/glad/include/glad/gl.h"
+#include "../vendor/glfw/include/GLFW/glfw3.h"
 #include <chrono>
-#include <iostream>
 #include <fstream>
-#include <glad/gl.h>
-#include <GLFW/glfw3.h>
+#include <iostream>
 
 #ifndef TEARS_ENGINE_COMMON_H
 #define TEARS_ENGINE_COMMON_H
@@ -17,12 +17,10 @@ using namespace std;
 using namespace std::chrono;
 
 inline double getTime() {
-    return duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
+  return duration_cast<milliseconds>(system_clock::now().time_since_epoch())
+      .count();
 }
 
-enum EVENTS {
-    MOUSE_MOVE,
-    SHAPE_CHANGE
-};
+enum EVENTS { MOUSE_MOVE, KEYBOARD };
 
-#endif //TEARS_ENGINE_COMMON_H
+#endif // TEARS_ENGINE_COMMON_H

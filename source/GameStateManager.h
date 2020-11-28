@@ -5,9 +5,15 @@
 #ifndef TEARS_ENGINE_GAMESTATEMANAGER_H
 #define TEARS_ENGINE_GAMESTATEMANAGER_H
 
+#include "./GameState.h"
 
 class GameStateManager {
-
+  GameState* currentState;
+  GameState* nextState;
+  bool shouldExit = false;
+  
+  void goToState(GameState*&);
+  void run();
 };
 
 

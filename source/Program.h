@@ -7,16 +7,18 @@
 
 #include "common.h"
 #include "Events/MouseMoveEvent.h"
-#include <glm/glm.hpp>
-#include <glm/gtc/type_ptr.hpp>
+// #include <glm/glm.hpp>
+// #include <glm/gtc/type_ptr.hpp>
+#include "../vendor/glm/glm/glm.hpp"
+#include "../vendor/glm/glm/gtc/type_ptr.hpp"
 
 class Program {
     GLuint program;
     GLuint vertex_array;
     int shape = 1;
     MousePosition prevMousePosition = {
-            x: 0,
-            y: 0
+      .x =  0,
+      .y =  0
     };
 public:
     Program();
