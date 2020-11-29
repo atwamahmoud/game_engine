@@ -1,4 +1,4 @@
-# Install script for directory: /home/mahmoud/college/graphics/tears_engine/vendor/glfw/src
+# Install script for directory: /home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/vendor/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

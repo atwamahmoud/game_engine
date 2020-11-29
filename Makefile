@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mahmoud/college/graphics/tears_engine
+CMAKE_SOURCE_DIR = /home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mahmoud/college/graphics/tears_engine
+CMAKE_BINARY_DIR = /home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahmoud/college/graphics/tears_engine/CMakeFiles /home/mahmoud/college/graphics/tears_engine/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/CMakeFiles /home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mahmoud/college/graphics/tears_engine/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -189,33 +189,6 @@ source/Components/Position.s: source/Components/Position.cpp.s
 source/Components/Position.cpp.s:
 	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/Position.cpp.s
 .PHONY : source/Components/Position.cpp.s
-
-source/Components/RenderComponent.o: source/Components/RenderComponent.cpp.o
-
-.PHONY : source/Components/RenderComponent.o
-
-# target to build an object file
-source/Components/RenderComponent.cpp.o:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.o
-.PHONY : source/Components/RenderComponent.cpp.o
-
-source/Components/RenderComponent.i: source/Components/RenderComponent.cpp.i
-
-.PHONY : source/Components/RenderComponent.i
-
-# target to preprocess a source file
-source/Components/RenderComponent.cpp.i:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.i
-.PHONY : source/Components/RenderComponent.cpp.i
-
-source/Components/RenderComponent.s: source/Components/RenderComponent.cpp.s
-
-.PHONY : source/Components/RenderComponent.s
-
-# target to generate assembly for a file
-source/Components/RenderComponent.cpp.s:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.s
-.PHONY : source/Components/RenderComponent.cpp.s
 
 source/Entity/Entity.o: source/Entity/Entity.cpp.o
 
@@ -325,6 +298,33 @@ source/Events/EventManager.cpp.s:
 	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.s
 .PHONY : source/Events/EventManager.cpp.s
 
+source/Events/KeyboardEvent.o: source/Events/KeyboardEvent.cpp.o
+
+.PHONY : source/Events/KeyboardEvent.o
+
+# target to build an object file
+source/Events/KeyboardEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o
+.PHONY : source/Events/KeyboardEvent.cpp.o
+
+source/Events/KeyboardEvent.i: source/Events/KeyboardEvent.cpp.i
+
+.PHONY : source/Events/KeyboardEvent.i
+
+# target to preprocess a source file
+source/Events/KeyboardEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.i
+.PHONY : source/Events/KeyboardEvent.cpp.i
+
+source/Events/KeyboardEvent.s: source/Events/KeyboardEvent.cpp.s
+
+.PHONY : source/Events/KeyboardEvent.s
+
+# target to generate assembly for a file
+source/Events/KeyboardEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.s
+.PHONY : source/Events/KeyboardEvent.cpp.s
+
 source/Events/MouseMoveEvent.o: source/Events/MouseMoveEvent.cpp.o
 
 .PHONY : source/Events/MouseMoveEvent.o
@@ -351,33 +351,6 @@ source/Events/MouseMoveEvent.s: source/Events/MouseMoveEvent.cpp.s
 source/Events/MouseMoveEvent.cpp.s:
 	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.s
 .PHONY : source/Events/MouseMoveEvent.cpp.s
-
-source/Events/ShapeChangeEvent.o: source/Events/ShapeChangeEvent.cpp.o
-
-.PHONY : source/Events/ShapeChangeEvent.o
-
-# target to build an object file
-source/Events/ShapeChangeEvent.cpp.o:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.o
-.PHONY : source/Events/ShapeChangeEvent.cpp.o
-
-source/Events/ShapeChangeEvent.i: source/Events/ShapeChangeEvent.cpp.i
-
-.PHONY : source/Events/ShapeChangeEvent.i
-
-# target to preprocess a source file
-source/Events/ShapeChangeEvent.cpp.i:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.i
-.PHONY : source/Events/ShapeChangeEvent.cpp.i
-
-source/Events/ShapeChangeEvent.s: source/Events/ShapeChangeEvent.cpp.s
-
-.PHONY : source/Events/ShapeChangeEvent.s
-
-# target to generate assembly for a file
-source/Events/ShapeChangeEvent.cpp.s:
-	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.s
-.PHONY : source/Events/ShapeChangeEvent.cpp.s
 
 source/GameStateManager.o: source/GameStateManager.cpp.o
 
@@ -638,9 +611,6 @@ help:
 	@echo "... source/Components/Position.o"
 	@echo "... source/Components/Position.i"
 	@echo "... source/Components/Position.s"
-	@echo "... source/Components/RenderComponent.o"
-	@echo "... source/Components/RenderComponent.i"
-	@echo "... source/Components/RenderComponent.s"
 	@echo "... source/Entity/Entity.o"
 	@echo "... source/Entity/Entity.i"
 	@echo "... source/Entity/Entity.s"
@@ -653,12 +623,12 @@ help:
 	@echo "... source/Events/EventManager.o"
 	@echo "... source/Events/EventManager.i"
 	@echo "... source/Events/EventManager.s"
+	@echo "... source/Events/KeyboardEvent.o"
+	@echo "... source/Events/KeyboardEvent.i"
+	@echo "... source/Events/KeyboardEvent.s"
 	@echo "... source/Events/MouseMoveEvent.o"
 	@echo "... source/Events/MouseMoveEvent.i"
 	@echo "... source/Events/MouseMoveEvent.s"
-	@echo "... source/Events/ShapeChangeEvent.o"
-	@echo "... source/Events/ShapeChangeEvent.i"
-	@echo "... source/Events/ShapeChangeEvent.s"
 	@echo "... source/GameStateManager.o"
 	@echo "... source/GameStateManager.i"
 	@echo "... source/GameStateManager.s"
