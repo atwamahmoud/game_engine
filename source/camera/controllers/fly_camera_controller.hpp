@@ -15,7 +15,7 @@ namespace our {
     // Allows you to control the camera freely in world space
     class FlyCameraController {
     private:
-        Application* app;
+        Application* app;  //not3e
         Camera* camera;
 
         float yaw, pitch;
