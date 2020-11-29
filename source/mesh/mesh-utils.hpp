@@ -1,7 +1,7 @@
 #ifndef TEARS_ENGINE_MESH_UTILS_H
 #define TEARS_ENGINE_MESH_UTILS_H
 
-#include "mesh.hpp"
+#include "../Mesh.hpp"
 
 #include <glm/glm.hpp>
 

@@ -56,7 +56,6 @@ add_executable(tears_engine
         source/camera/controllers/orbit_camera_controller.hpp
         source/mesh/common-vertex-attributes.hpp
         source/mesh/common-vertex-types.hpp
-        source/mesh/mesh.hpp
         source/mesh/mesh-utils.hpp
         source/mesh/mesh-utils.cpp
         source/mesh/vertex-attributes.hpp
