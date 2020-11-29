@@ -568,6 +568,33 @@ source/main.cpp.s:
 	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
+source/mesh/mesh-utils.o: source/mesh/mesh-utils.cpp.o
+
+.PHONY : source/mesh/mesh-utils.o
+
+# target to build an object file
+source/mesh/mesh-utils.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o
+.PHONY : source/mesh/mesh-utils.cpp.o
+
+source/mesh/mesh-utils.i: source/mesh/mesh-utils.cpp.i
+
+.PHONY : source/mesh/mesh-utils.i
+
+# target to preprocess a source file
+source/mesh/mesh-utils.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.i
+.PHONY : source/mesh/mesh-utils.cpp.i
+
+source/mesh/mesh-utils.s: source/mesh/mesh-utils.cpp.s
+
+.PHONY : source/mesh/mesh-utils.s
+
+# target to generate assembly for a file
+source/mesh/mesh-utils.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.s
+.PHONY : source/mesh/mesh-utils.cpp.s
+
 vendor/glad/src/gl.o: vendor/glad/src/gl.c.o
 
 .PHONY : vendor/glad/src/gl.o
@@ -653,6 +680,9 @@ help:
 	@echo "... source/main.o"
 	@echo "... source/main.i"
 	@echo "... source/main.s"
+	@echo "... source/mesh/mesh-utils.o"
+	@echo "... source/mesh/mesh-utils.i"
+	@echo "... source/mesh/mesh-utils.s"
 	@echo "... vendor/glad/src/gl.o"
 	@echo "... vendor/glad/src/gl.i"
 	@echo "... vendor/glad/src/gl.s"

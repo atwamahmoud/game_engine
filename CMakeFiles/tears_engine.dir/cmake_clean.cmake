@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o"
   "CMakeFiles/tears_engine.dir/source/main.cpp.o"
+  "CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o"
   "CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o"
   "tears_engine"
   "tears_engine.pdb"

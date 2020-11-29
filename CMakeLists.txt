@@ -51,6 +51,15 @@ add_executable(tears_engine
         source/Events/MouseMoveEvent.h
         source/Events/KeyboardEvent.cpp
         source/Events/KeyboardEvent.h
+        source/camera/camera.hpp
+        source/camera/controllers/fly_camera_controller.hpp
+        source/camera/controllers/orbit_camera_controller.hpp
+        source/mesh/common-vertex-attributes.hpp
+        source/mesh/common-vertex-types.hpp
+        source/mesh/mesh.hpp
+        source/mesh/mesh-utils.hpp
+        source/mesh/mesh-utils.cpp
+        source/mesh/vertex-attributes.hpp
         )
 
 target_link_libraries(tears_engine glfw)

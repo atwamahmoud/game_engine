@@ -33,6 +33,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/source/Systems/System.cpp" "/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o"
   "/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/source/Systems/SystemManager.cpp" "/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o"
   "/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/source/main.cpp" "/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/CMakeFiles/tears_engine.dir/source/main.cpp.o"
+  "/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/source/mesh/mesh-utils.cpp" "/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
