@@ -1,5 +1,9 @@
 /snap/clion/135/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ahmedezzat/Desktop/Graphics/tears_engine
--- Using X11 for window creation
--- Configuring done
--- Generating done
--- Build files have been written to: /home/ahmedezzat/Desktop/Graphics/tears_engine
+CMake Error at CMakeLists.txt:23:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "=======".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/ahmedezzat/Desktop/Graphics/tears_engine/CMakeFiles/CMakeOutput.log".
+See also "/home/ahmedezzat/Desktop/Graphics/tears_engine/CMakeFiles/CMakeError.log".
