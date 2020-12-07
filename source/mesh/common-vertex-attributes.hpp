@@ -4,7 +4,7 @@
 #include "vertex-attributes.hpp"
 #include "common-vertex-types.hpp"
 
-#include <glad/gl.h>
+#include "../../vendor/glad/include/glad/gl.h"
 
 
 

@@ -1,47 +1,44 @@
-#ifndef TEARS_ENGINE_CAMERA_HPP
-#define TEARS_ENGINE_CAMERA_HPP
+//
+// Created by atwa on 11/7/20.
+//
 
+#ifndef TEARS_ENGINE_CAMERA_COMPONENT_H
+#define TEARS_ENGINE_CAMERA_COMPONENT_H
+
+
+#include "Component.h"
+#include <bits/stdint-uintn.h>
+#include <vector>
 #include "../../vendor/glm/glm/glm.hpp"
 #include "../../vendor/glm/glm/gtc/matrix_transform.hpp"
 
+enum Projection {
+  Orthographic,
+  Perspective
+};
 
-    // An enum for the camera projection type
-    enum struct CameraType {
-        Orthographic,
-        Perspective
-    };
-
-    // A class that represents a camera
-    // Used to generate a view and a projection matrix
-    class Camera {
-    private:
-        // Dirty Flags are programming pattern where we only regenerate some output if:
-        // 1- The inputs were changed.
-        // 2- The output is needed.
-        // Where we have flags for whether the View, Projection & ViewProjection matrices needed to be regenerated.
-        static const uint8_t V_DIRTY = 1, P_DIRTY = 2, VP_DIRTY = 4;
-        uint8_t dirtyFlags = 0;
-
-        // The camera position, camera forward direction and camera up direction
-        glm::vec3 eye = {0, 0, 0}, direction = {0, 0, -1}, up = {0, 1, 0};
-
-        CameraType type = CameraType::Perspective;
-
-        // The field_of_view_y is in radians and is only used for perspective cameras
-        // The orthographic_height is only used for orthographic cameras
-        float field_of_view_y = glm::radians(90.0f), orthographic_height = 2.0f, aspect_ratio = 1.0f, near = 0.01f, far = 100.0f;
-
-        glm::mat4 V{}, P{}, VP{};
-
-    public:
-        Camera(){
+class CameraComponent: public Component {
+public:
+  Projection projection;
+  // Field of view is ignored when camera is orthographic
+  static const uint8_t V_DIRTY = 1, P_DIRTY = 2, VP_DIRTY = 4;
+  uint8_t dirtyFlags = 0;
+  float verticalFOV;
+  // Credits to:: @neginfinity, https://forum.unity.com/threads/adjust-fov-based-on-aspect-ratio-how.474627/
+  // aspectRatio = tan(hFov * 0.5f)/tan(vFov*0.5f);
+  float field_of_view_y = glm::radians(90.0f), orthographic_height = 2.0f, aspect_ratio = 1.0f, near = 0.01f, far = 100.0f;
+  glm::vec3 eye = {0, 0, 0}, direction = {0, 0, -1}, up = {0, 1, 0};
+  float nearPlane;
+  float farPlane;
+  glm::mat4 V{}, P{}, VP{};
+   CameraComponent(){
             dirtyFlags = V_DIRTY | P_DIRTY | VP_DIRTY;
             up = {0, 1, 0};
         }
 
         // Setup the camera as a perspective camera
         void setupPerspective(float field_of_view_y, float aspect_ratio, float near, float far){
-            this->type = CameraType::Perspective;
+            this->projection = Projection::Perspective;
             this->field_of_view_y = field_of_view_y;
             this->aspect_ratio = aspect_ratio;
             this->near = near;
@@ -51,7 +48,7 @@
 
         // Setup the camera as an orthographic camera
         void setupOrthographic(float orthographic_height, float aspect_ratio, float near, float far){
-            this->type = CameraType::Orthographic;
+            this->projection = Projection::Perspective;
             this->orthographic_height = orthographic_height;
             this->aspect_ratio = aspect_ratio;
             this->near = near;
@@ -59,10 +56,10 @@
             dirtyFlags |= P_DIRTY | VP_DIRTY; // Both P & VP need to be regenerated
         }
 
-        void setType(CameraType _type){
-            if(this->type != _type){
+        void setType(Projection _type){
+            if(this->projection != _type){
                 dirtyFlags |= P_DIRTY | VP_DIRTY;
-                this->type = _type;
+                this->projection = _type;
             }
         }
         void setOrthographicSize(float orthographic_height){
@@ -123,7 +120,7 @@
 
         glm::mat4 getProjectionMatrix(){
             if(dirtyFlags & P_DIRTY){ // Only regenerate the projection matrix if its flag is dirty
-                if(type == CameraType::Orthographic){
+                if(projection == Projection::Orthographic){
                     float half_height = orthographic_height * 0.5f;
                     float half_width = aspect_ratio * half_height;
                     P = glm::ortho(-half_width, half_width, -half_height, half_height, near, far);
@@ -153,7 +150,7 @@
             return VP;
         }
 
-        CameraType getType(){return type;}
+        Projection getType(){return this->projection;}
         [[nodiscard]] float getVerticalFieldOfView() const {return field_of_view_y;}
         [[nodiscard]] float getHorizontalFieldOfView() const {return field_of_view_y * aspect_ratio;}
         [[nodiscard]] float getOrthographicHeight() const {return orthographic_height;}
@@ -204,8 +201,7 @@
             return glm::vec3(clip)/clip.w;
             // Note that we must divide by w even though we not going to the NDC space. This is because of the projection matrix.
         }
-    };
+};
 
 
-
-#endif //OUR_CAMERA_HPP
+#endif //TEARS_ENGINE_CAMERA_COMPONENT_H

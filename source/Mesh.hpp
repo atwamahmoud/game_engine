@@ -4,7 +4,7 @@
 
 #ifndef TEARS_ENGINE_MESH
 #define TEARS_ENGINE_MESH
-#include "./Components/CameraComponent.h"
+#include "./Components/CameraComponent.hpp"
 #include "./Components/TransformComponent.h"
 #include "../vendor/glad/include/glad/gl.h"
 #include <functional>
@@ -243,6 +243,9 @@
                 glDrawArrays(primitive_mode, start, count); // Then we draw
                 glBindVertexArray(0); // Then unbind the vertex array
             }
+        }
+
+         void draw(TransformComponent* obj_t, TransformComponent* camera_t, CameraComponent* camera) const {
         }
 
         // function x(transformMe, cameraTransform, cameraComponent) {

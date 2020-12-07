@@ -1,16 +1,21 @@
 #include "RenderSystem.h"
-#include "../Components/CameraComponent.h"
+#include "../Components/CameraComponent.hpp"
 #include "../Components/MeshRenderer.h"
 #include "../Components/TransformComponent.h"
+#include "../Components/Material.h"
 #include <vector>
+#include "../Program.h"
+
 
 TransformComponent *transform;
 MeshRenderer *renderer;
 CameraComponent *cameraComponent;
+Material *material;
 
 string transformComponentName = typeid(transform).name();
 string meshRendererName = typeid(renderer).name();
 string cameraComponentName = typeid(cameraComponent).name();
+string materialComponentName = typeid(material).name();
 
 void RenderSystem::update(EntityManager &entityManager,
                           EventManager &eventManager, double dt) {
@@ -41,12 +46,43 @@ void RenderSystem::update(EntityManager &entityManager,
         entity->components[transformComponentName]);
     renderer =
         dynamic_cast<MeshRenderer *>(entity->components[meshRendererName]);
+    
+    renderer->mesh->draw();
+  }
+  transform = nullptr;
+  renderer = nullptr;
 
-    renderer->mesh->draw(transform,
-                         dynamic_cast<TransformComponent *>(
-                             camera->components[transformComponentName]),
-                         dynamic_cast<CameraComponent *>(
-                             camera->components[cameraComponentName]));
+  entities = entityManager.getEntitiesHaving({materialComponentName});
+
+  // Get Camera Entity....
+  for (Entity *entity : entities) {
+    // transform...
+    // renderer...
+    Material* material = dynamic_cast<Material *>(entity->components[materialComponentName]);
+
+    glClear(GL_COLOR_BUFFER_BIT);
+    glUseProgram(*material->shader);
+
+    for (std::pair<string, std::vector<float>> element : material->uniformMap) {
+      GLint loc = glGetUniformLocation(*material->shader, element.first.c_str());
+      switch(element.second.size()){
+        case 1:
+          glUniform1f(loc, element.second[0]);
+          break;
+        case 2:
+          glUniform2f(loc, element.second[0], element.second[1]);
+          break;
+        case 3:
+          glUniform3f(loc, element.second[0], element.second[1], element.second[2]);
+          break;
+        case 4:
+          glUniform4f(loc, element.second[0],element.second[1],element.second[2], element.second[3]);
+          break;
+        default:
+          break;
+      } 
+    }
+
   }
   transform = nullptr;
   renderer = nullptr;

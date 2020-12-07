@@ -13,6 +13,7 @@ static void keyCallback(GLFWwindow *window, int key, int scancode, int action,
 void glfw_error_callback(int error, const char *description) {
   std::cerr << "GLFW Error: " << error << ": " << description << std::endl;
 }
+static void mouseClickCallback(GLFWwindow *window, int button, int action, int mods);
 
 EventManager eventManager;
 EntityManager entityManager;
@@ -88,6 +89,7 @@ int main() {
 
   glfwSetCursorPosCallback(window, cursorPositionCallback);
   glfwSetKeyCallback(window, keyCallback);
+  glfwSetMouseButtonCallback(window, mouseClickCallback);
 
   glfwSwapBuffers(window);
 
@@ -118,6 +120,10 @@ static void cursorPositionCallback(GLFWwindow *window, double xpos,
   eventManager.mousePosition.x = xpos;
   eventManager.mousePosition.y = ypos;
   eventManager.mouseEvent.trigger(eventManager.mousePosition, entityManager);
+}
+static void mouseClickCallback(GLFWwindow *window, int button,
+                                   int action, int mods) {
+  eventManager.mouseClickEvent.trigger(button, entityManager);
 }
 static void keyCallback(GLFWwindow *window, int key, int scanCode, int action,
                         int mods) {

@@ -1,12 +1,12 @@
 #ifndef TEARS_ENGINE_VERTEX_TYPES_H
 #define TEARS_ENGINE_VERTEX_TYPES_H
 
-#include <glm/common.hpp>
-#include <glm/vec3.hpp>
-#include <glm/vec2.hpp>
-#include <glm/gtx/hash.hpp>
+#include "../../vendor/glm/glm/common.hpp"
+#include "../../vendor/glm/glm/vec3.hpp"
+#include "../../vendor/glm/glm/vec2.hpp"
+#include "../../vendor/glm/glm/gtx/hash.hpp"
 
-#include <data-types.h>
+typedef glm::vec<4, glm::uint8, glm::defaultp> Color;
 
 
 
@@ -40,8 +40,6 @@
         }
     };
 
-}
-
 
 // We plan to use struct Vertex as a key for a map so we need to define a hash function for it
 namespace std {
@@ -49,15 +47,15 @@ namespace std {
     inline size_t hash_combine(size_t h1, size_t h2){ return h1 ^ (h2 << 1); }
 
     //A Hash function for struct Vertex
-    template<> struct hash<our::Vertex> {
-        size_t operator()(our::Vertex const& vertex) const {
+    template<> struct hash<Vertex> {
+        size_t operator()(Vertex const& vertex) const {
             size_t combined = hash<glm::vec3>()(vertex.position);
-            combined = hash_combine(combined, hash<our::Color>()(vertex.color));
+            combined = hash_combine(combined, hash<Color>()(vertex.color));
             combined = hash_combine(combined, hash<glm::vec2>()(vertex.tex_coord));
             combined = hash_combine(combined, hash<glm::vec3>()(vertex.normal));
             return combined;
         }
     };
-
+}
 
 #endif //OUR_VERTEX_TYPES_H

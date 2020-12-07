@@ -1,4 +1,4 @@
-# Install script for directory: /home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/vendor/glfw
+# Install script for directory: /home/mahmoud/college/graphics/tears_engine/vendor/glfw
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ahmad/Desktop/Fall2020/Graphics/Project/tears_engine/vendor/glfw/src/cmake_install.cmake")
+  include("/home/mahmoud/college/graphics/tears_engine/vendor/glfw/src/cmake_install.cmake")
 
 endif()
 
