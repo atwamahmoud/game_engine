@@ -6,39 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/CameraComponent.hpp
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Component.h
+
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Position.h
 Component.h
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Component.h
-bits/stdint-uintn.h
--
-vector
--
-../../vendor/glm/glm/glm.hpp
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/vendor/glm/glm/glm.hpp
-../../vendor/glm/glm/gtc/matrix_transform.hpp
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/vendor/glm/glm/gtc/matrix_transform.hpp
-
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Component.h
-
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Material.h
-unordered_map
--
-../common.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/common.h
-vector
--
-
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/MeshRenderer.h
-../Mesh.hpp
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Mesh.hpp
-Material.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Material.h
-
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.h
-Component.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Component.h
-vector
--
 
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Entity/Entity.h
 unordered_map
@@ -100,34 +72,6 @@ Event.h
 ../common.h
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/common.h
 
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Mesh.hpp
-./Components/CameraComponent.hpp
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/CameraComponent.hpp
-./Components/TransformComponent.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.h
-../vendor/glad/include/glad/gl.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/vendor/glad/include/glad/gl.h
-functional
--
-iostream
--
-assert.h
--
-map
--
-string
--
-vector
--
-functional
--
-iostream
--
-cassert
--
-mesh/vertex-attributes.hpp
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/mesh/vertex-attributes.hpp
-
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Program.h
 common.h
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/common.h
@@ -137,28 +81,6 @@ Events/MouseMoveEvent.h
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/vendor/glm/glm/glm.hpp
 ../vendor/glm/glm/gtc/type_ptr.hpp
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/vendor/glm/glm/gtc/type_ptr.hpp
-
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/RenderSystem.cpp
-RenderSystem.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/RenderSystem.h
-../Components/CameraComponent.hpp
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/CameraComponent.hpp
-../Components/MeshRenderer.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/MeshRenderer.h
-../Components/TransformComponent.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.h
-../Components/Material.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Material.h
-vector
--
-../Program.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Program.h
-
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/RenderSystem.h
-../Components/TransformComponent.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.h
-System.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/System.h
 
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/System.h
 string
@@ -172,6 +94,14 @@ unordered_map
 ../Events/EventManager.h
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Events/EventManager.h
 
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/SystemManager.h
+unordered_map
+-
+../Events/EventManager.h
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Events/EventManager.h
+System.h
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/System.h
+
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/common.h
 ../vendor/glad/include/glad/gl.h
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/vendor/glad/include/glad/gl.h
@@ -184,9 +114,21 @@ fstream
 iostream
 -
 
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/mesh/vertex-attributes.hpp
-../../vendor/glad/include/glad/gl.h
-/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/vendor/glad/include/glad/gl.h
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/main.cpp
+Components/Position.h
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Position.h
+Events/EventManager.h
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Events/EventManager.h
+Program.h
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Program.h
+Systems/SystemManager.h
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/SystemManager.h
+common.h
+/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/common.h
+iostream
+-
+unistd.h
+-
 
 /home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/vendor/glad/include/glad/gl.h
 winapifamily.h
