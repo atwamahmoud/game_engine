@@ -70,9 +70,22 @@ CMakeFiles/tears_engine.dir/source/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/college/graphics/tears_engine/source/main.cpp -o CMakeFiles/tears_engine.dir/source/main.cpp.s
 
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: CMakeFiles/tears_engine.dir/flags.make
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: source/Events/MouseClickEvent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.cpp
+
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.cpp > CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.i
+
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.cpp -o CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.s
+
 CMakeFiles/tears_engine.dir/source/Program.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Program.cpp.o: source/Program.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tears_engine.dir/source/Program.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tears_engine.dir/source/Program.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Program.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Program.cpp
 
 CMakeFiles/tears_engine.dir/source/Program.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/tears_engine.dir/source/Program.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o: vendor/glad/src/gl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o   -c /home/mahmoud/college/graphics/tears_engine/vendor/glad/src/gl.c
 
 CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o: source/GameStateManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/GameStateManager.cpp
 
 CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o: source/Entity/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Entity/Entity.cpp
 
 CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o: source/Components/Component.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Components/Component.cpp
 
 CMakeFiles/tears_engine.dir/source/Components/Component.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/tears_engine.dir/source/Components/Component.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Systems/System.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Systems/System.cpp
 
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/tears_engine.dir/source/Systems/System.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o: source/Entity/EntityManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Entity/EntityManager.cpp
 
 CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Systems/SystemManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Systems/SystemManager.cpp
 
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o: source/Events/Event.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Events/Event.cpp
 
 CMakeFiles/tears_engine.dir/source/Events/Event.cpp.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/tears_engine.dir/source/Events/Event.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: source/Events/EventManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.cpp
 
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.i: cmake_force
@@ -202,7 +215,7 @@ CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: source/Events/MouseMoveEvent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Events/MouseMoveEvent.cpp
 
 CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.i: cmake_force
@@ -215,7 +228,7 @@ CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Systems/MovementSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Systems/MovementSystem.cpp
 
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.i: cmake_force
@@ -228,7 +241,7 @@ CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o: source/Components/Position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Components/Position.cpp
 
 CMakeFiles/tears_engine.dir/source/Components/Position.cpp.i: cmake_force
@@ -241,7 +254,7 @@ CMakeFiles/tears_engine.dir/source/Components/Position.cpp.s: cmake_force
 
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Systems/ProgramSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Systems/ProgramSystem.cpp
 
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.i: cmake_force
@@ -251,19 +264,6 @@ CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.i: cmake_force
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/college/graphics/tears_engine/source/Systems/ProgramSystem.cpp -o CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.s
-
-CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.o: CMakeFiles/tears_engine.dir/flags.make
-CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.o: source/Components/RenderComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Components/RenderComponent.cpp
-
-CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mahmoud/college/graphics/tears_engine/source/Components/RenderComponent.cpp > CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.i
-
-CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/college/graphics/tears_engine/source/Components/RenderComponent.cpp -o CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.s
 
 CMakeFiles/tears_engine.dir/source/Systems/SelectionSystem.cpp.o: CMakeFiles/tears_engine.dir/flags.make
 CMakeFiles/tears_engine.dir/source/Systems/SelectionSystem.cpp.o: source/Systems/SelectionSystem.cpp
@@ -278,22 +278,36 @@ CMakeFiles/tears_engine.dir/source/Systems/SelectionSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Systems/SelectionSystem.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/college/graphics/tears_engine/source/Systems/SelectionSystem.cpp -o CMakeFiles/tears_engine.dir/source/Systems/SelectionSystem.cpp.s
 
-CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.o: CMakeFiles/tears_engine.dir/flags.make
-CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.o: source/Events/ShapeChangeEvent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Events/ShapeChangeEvent.cpp
+CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o: CMakeFiles/tears_engine.dir/flags.make
+CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o: source/Events/KeyboardEvent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.cpp
 
-CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mahmoud/college/graphics/tears_engine/source/Events/ShapeChangeEvent.cpp > CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.i
+CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.cpp > CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.i
 
-CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/college/graphics/tears_engine/source/Events/ShapeChangeEvent.cpp -o CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.s
+CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.cpp -o CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.s
+
+CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o: CMakeFiles/tears_engine.dir/flags.make
+CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o: source/mesh/mesh-utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o -c /home/mahmoud/college/graphics/tears_engine/source/mesh/mesh-utils.cpp
+
+CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mahmoud/college/graphics/tears_engine/source/mesh/mesh-utils.cpp > CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.i
+
+CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mahmoud/college/graphics/tears_engine/source/mesh/mesh-utils.cpp -o CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.s
 
 # Object files for target tears_engine
 tears_engine_OBJECTS = \
 "CMakeFiles/tears_engine.dir/source/main.cpp.o" \
+"CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o" \
 "CMakeFiles/tears_engine.dir/source/Program.cpp.o" \
 "CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o" \
 "CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o" \
@@ -308,14 +322,15 @@ tears_engine_OBJECTS = \
 "CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o" \
 "CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o" \
 "CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o" \
-"CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.o" \
 "CMakeFiles/tears_engine.dir/source/Systems/SelectionSystem.cpp.o" \
-"CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.o"
+"CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o" \
+"CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o"
 
 # External object files for target tears_engine
 tears_engine_EXTERNAL_OBJECTS =
 
 tears_engine: CMakeFiles/tears_engine.dir/source/main.cpp.o
+tears_engine: CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Program.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/vendor/glad/src/gl.c.o
 tears_engine: CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o
@@ -330,16 +345,16 @@ tears_engine: CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o
-tears_engine: CMakeFiles/tears_engine.dir/source/Components/RenderComponent.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Systems/SelectionSystem.cpp.o
-tears_engine: CMakeFiles/tears_engine.dir/source/Events/ShapeChangeEvent.cpp.o
+tears_engine: CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o
+tears_engine: CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/build.make
 tears_engine: vendor/glfw/src/libglfw3.a
 tears_engine: /usr/lib/x86_64-linux-gnu/librt.so
 tears_engine: /usr/lib/x86_64-linux-gnu/libm.so
 tears_engine: /usr/lib/x86_64-linux-gnu/libX11.so
 tears_engine: CMakeFiles/tears_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable tears_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mahmoud/college/graphics/tears_engine/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable tears_engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tears_engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

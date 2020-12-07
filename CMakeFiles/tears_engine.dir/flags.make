@@ -7,11 +7,11 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mahmoud/college/graphics/tears_engine/vendor -I/home/mahmoud/college/graphics/tears_engine/vendor/glm -I/home/mahmoud/college/graphics/tears_engine/vendor/glfw/include -I/home/mahmoud/college/graphics/tears_engine/vendor/glad/include 
+C_INCLUDES = -I/home/mahmoud/college/graphics/tears_engine/vendor -I/home/mahmoud/college/graphics/tears_engine/vendor/utils/tinyobj -I/home/mahmoud/college/graphics/tears_engine/vendor/glm -I/home/mahmoud/college/graphics/tears_engine/vendor/glfw/include -I/home/mahmoud/college/graphics/tears_engine/vendor/glad/include 
 
 CXX_FLAGS =   -std=c++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mahmoud/college/graphics/tears_engine/vendor -I/home/mahmoud/college/graphics/tears_engine/vendor/glm -I/home/mahmoud/college/graphics/tears_engine/vendor/glfw/include -I/home/mahmoud/college/graphics/tears_engine/vendor/glad/include 
+CXX_INCLUDES = -I/home/mahmoud/college/graphics/tears_engine/vendor -I/home/mahmoud/college/graphics/tears_engine/vendor/utils/tinyobj -I/home/mahmoud/college/graphics/tears_engine/vendor/glm -I/home/mahmoud/college/graphics/tears_engine/vendor/glfw/include -I/home/mahmoud/college/graphics/tears_engine/vendor/glad/include 
 

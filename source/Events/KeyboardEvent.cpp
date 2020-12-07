@@ -11,10 +11,10 @@ int KeyboardEvent::addCallback(std::function<void(EntityManager &, int)> func) {
   return this->count++;
 }
 
-void KeyboardEvent::trigger(int shape, EntityManager &manager) {
+void KeyboardEvent::trigger(int key, EntityManager &manager) {
   for (std::pair<int, std::function<void(EntityManager &, int)>> element :
        this->callbacks) {
-    element.second(manager, shape);
+    element.second(manager, key);
   }
 }
 

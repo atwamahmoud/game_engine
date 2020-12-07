@@ -31,6 +31,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "vendor"
+  "vendor/utils/tinyobj"
   "vendor/glm"
   "vendor/glfw/include"
   "vendor/glad/include"
