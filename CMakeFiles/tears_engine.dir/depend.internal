@@ -47,6 +47,7 @@ CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o
  /home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.cpp
  /home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.h
+ /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/MouseMoveEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/common.h
  /home/mahmoud/college/graphics/tears_engine/vendor/glad/include/glad/gl.h
@@ -59,6 +60,17 @@ CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o
  /home/mahmoud/college/graphics/tears_engine/source/Events/Event.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.cpp
  /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.h
+ /home/mahmoud/college/graphics/tears_engine/source/common.h
+ /home/mahmoud/college/graphics/tears_engine/vendor/glad/include/glad/gl.h
+ /home/mahmoud/college/graphics/tears_engine/vendor/glfw/include/GLFW/glfw3.h
+ vendor/glad/include/KHR/khrplatform.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o
+ /home/mahmoud/college/graphics/tears_engine/source/Components/Component.h
+ /home/mahmoud/college/graphics/tears_engine/source/Entity/Entity.h
+ /home/mahmoud/college/graphics/tears_engine/source/Entity/EntityManager.h
+ /home/mahmoud/college/graphics/tears_engine/source/Events/Event.h
+ /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.cpp
+ /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/common.h
  /home/mahmoud/college/graphics/tears_engine/vendor/glad/include/glad/gl.h
  /home/mahmoud/college/graphics/tears_engine/vendor/glfw/include/GLFW/glfw3.h
@@ -299,6 +311,7 @@ CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o
  /home/mahmoud/college/graphics/tears_engine/source/Events/Event.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.h
+ /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/MouseMoveEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Systems/MovementSystem.cpp
  /home/mahmoud/college/graphics/tears_engine/source/Systems/MovementSystem.h
@@ -314,6 +327,7 @@ CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o
  /home/mahmoud/college/graphics/tears_engine/source/Events/Event.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.h
+ /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/MouseMoveEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Systems/ProgramSystem.cpp
  /home/mahmoud/college/graphics/tears_engine/source/Systems/ProgramSystem.h
@@ -332,6 +346,7 @@ CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o
  /home/mahmoud/college/graphics/tears_engine/source/Events/Event.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.h
+ /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/MouseMoveEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Systems/System.cpp
  /home/mahmoud/college/graphics/tears_engine/source/Systems/System.h
@@ -346,6 +361,7 @@ CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o
  /home/mahmoud/college/graphics/tears_engine/source/Events/Event.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.h
+ /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/MouseMoveEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Systems/MovementSystem.h
  /home/mahmoud/college/graphics/tears_engine/source/Systems/System.h
@@ -363,6 +379,7 @@ CMakeFiles/tears_engine.dir/source/main.cpp.o
  /home/mahmoud/college/graphics/tears_engine/source/Events/Event.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.h
+ /home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Events/MouseMoveEvent.h
  /home/mahmoud/college/graphics/tears_engine/source/Program.h
  /home/mahmoud/college/graphics/tears_engine/source/Systems/System.h
@@ -574,7 +591,7 @@ CMakeFiles/tears_engine.dir/source/main.cpp.o
  /home/mahmoud/college/graphics/tears_engine/vendor/glm/glm/vector_relational.hpp
  vendor/glad/include/KHR/khrplatform.h
 CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o
- /home/mahmoud/college/graphics/tears_engine/source/Components/CameraComponent.h
+ /home/mahmoud/college/graphics/tears_engine/source/Components/CameraComponent.hpp
  /home/mahmoud/college/graphics/tears_engine/source/Components/Component.h
  /home/mahmoud/college/graphics/tears_engine/source/Components/TransformComponent.h
  /home/mahmoud/college/graphics/tears_engine/source/Mesh.hpp

@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mahmoud/college/graphics/tears_engine/source/Events/Event.cpp" "/home/mahmoud/college/graphics/tears_engine/CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o"
   "/home/mahmoud/college/graphics/tears_engine/source/Events/EventManager.cpp" "/home/mahmoud/college/graphics/tears_engine/CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o"
   "/home/mahmoud/college/graphics/tears_engine/source/Events/KeyboardEvent.cpp" "/home/mahmoud/college/graphics/tears_engine/CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o"
+  "/home/mahmoud/college/graphics/tears_engine/source/Events/MouseClickEvent.cpp" "/home/mahmoud/college/graphics/tears_engine/CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o"
   "/home/mahmoud/college/graphics/tears_engine/source/Events/MouseMoveEvent.cpp" "/home/mahmoud/college/graphics/tears_engine/CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o"
   "/home/mahmoud/college/graphics/tears_engine/source/GameStateManager.cpp" "/home/mahmoud/college/graphics/tears_engine/CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o"
   "/home/mahmoud/college/graphics/tears_engine/source/Program.cpp" "/home/mahmoud/college/graphics/tears_engine/CMakeFiles/tears_engine.dir/source/Program.cpp.o"

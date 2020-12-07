@@ -325,6 +325,33 @@ source/Events/KeyboardEvent.cpp.s:
 	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.s
 .PHONY : source/Events/KeyboardEvent.cpp.s
 
+source/Events/MouseClickEvent.o: source/Events/MouseClickEvent.cpp.o
+
+.PHONY : source/Events/MouseClickEvent.o
+
+# target to build an object file
+source/Events/MouseClickEvent.cpp.o:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o
+.PHONY : source/Events/MouseClickEvent.cpp.o
+
+source/Events/MouseClickEvent.i: source/Events/MouseClickEvent.cpp.i
+
+.PHONY : source/Events/MouseClickEvent.i
+
+# target to preprocess a source file
+source/Events/MouseClickEvent.cpp.i:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.i
+.PHONY : source/Events/MouseClickEvent.cpp.i
+
+source/Events/MouseClickEvent.s: source/Events/MouseClickEvent.cpp.s
+
+.PHONY : source/Events/MouseClickEvent.s
+
+# target to generate assembly for a file
+source/Events/MouseClickEvent.cpp.s:
+	$(MAKE) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.s
+.PHONY : source/Events/MouseClickEvent.cpp.s
+
 source/Events/MouseMoveEvent.o: source/Events/MouseMoveEvent.cpp.o
 
 .PHONY : source/Events/MouseMoveEvent.o
@@ -653,6 +680,9 @@ help:
 	@echo "... source/Events/KeyboardEvent.o"
 	@echo "... source/Events/KeyboardEvent.i"
 	@echo "... source/Events/KeyboardEvent.s"
+	@echo "... source/Events/MouseClickEvent.o"
+	@echo "... source/Events/MouseClickEvent.i"
+	@echo "... source/Events/MouseClickEvent.s"
 	@echo "... source/Events/MouseMoveEvent.o"
 	@echo "... source/Events/MouseMoveEvent.i"
 	@echo "... source/Events/MouseMoveEvent.s"

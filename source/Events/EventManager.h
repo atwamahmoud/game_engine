@@ -7,16 +7,17 @@
 
 #include "Event.h"
 #include "KeyboardEvent.h"
-#include "MouseClick.h"
+#include "MouseClickEvent.h"
 #include "MouseMoveEvent.h"
 #include <vector>
+
 class EventManager {
 
 public:
   MouseMoveEvent mouseEvent = MouseMoveEvent();
+  MouseClickEvent mouseClickEvent = MouseClickEvent();
   MousePosition mousePosition;
   KeyboardEvent keyboardEvent = KeyboardEvent();
-  MouseClickEvent mouseClickEvent = MouseClickEvent();
 };
 
 #endif // TEARS_ENGINE_EVENTMANAGER_H

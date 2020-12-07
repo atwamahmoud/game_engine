@@ -46,6 +46,7 @@ CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: source/Events/Even
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: source/Events/EventManager.cpp
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: source/Events/EventManager.h
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: source/Events/KeyboardEvent.h
+CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: source/Events/MouseClickEvent.h
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: source/Events/MouseMoveEvent.h
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: source/common.h
 CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o: vendor/glad/include/glad/gl.h
@@ -62,6 +63,17 @@ CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o: source/common.h
 CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o: vendor/glad/include/glad/gl.h
 CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o: vendor/glfw/include/GLFW/glfw3.h
 CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o: vendor/glad/include/KHR/khrplatform.h
+
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: source/Components/Component.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: source/Entity/Entity.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: source/Entity/EntityManager.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: source/Events/Event.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: source/Events/MouseClickEvent.cpp
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: source/Events/MouseClickEvent.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: source/common.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: vendor/glad/include/glad/gl.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: vendor/glfw/include/GLFW/glfw3.h
+CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o: vendor/glad/include/KHR/khrplatform.h
 
 CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o: source/Entity/Entity.h
@@ -298,6 +310,7 @@ CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Entity/E
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Events/Event.h
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Events/EventManager.h
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Events/KeyboardEvent.h
+CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Events/MouseClickEvent.h
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Events/MouseMoveEvent.h
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Systems/MovementSystem.cpp
 CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o: source/Systems/MovementSystem.h
@@ -313,6 +326,7 @@ CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Entity/En
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Events/Event.h
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Events/EventManager.h
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Events/KeyboardEvent.h
+CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Events/MouseClickEvent.h
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Events/MouseMoveEvent.h
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Systems/ProgramSystem.cpp
 CMakeFiles/tears_engine.dir/source/Systems/ProgramSystem.cpp.o: source/Systems/ProgramSystem.h
@@ -331,6 +345,7 @@ CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Entity/EntityMan
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Events/Event.h
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Events/EventManager.h
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Events/KeyboardEvent.h
+CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Events/MouseClickEvent.h
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Events/MouseMoveEvent.h
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Systems/System.cpp
 CMakeFiles/tears_engine.dir/source/Systems/System.cpp.o: source/Systems/System.h
@@ -345,6 +360,7 @@ CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Entity/En
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Events/Event.h
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Events/EventManager.h
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Events/KeyboardEvent.h
+CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Events/MouseClickEvent.h
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Events/MouseMoveEvent.h
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Systems/MovementSystem.h
 CMakeFiles/tears_engine.dir/source/Systems/SystemManager.cpp.o: source/Systems/System.h
@@ -362,6 +378,7 @@ CMakeFiles/tears_engine.dir/source/main.cpp.o: source/Entity/EntityManager.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: source/Events/Event.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: source/Events/EventManager.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: source/Events/KeyboardEvent.h
+CMakeFiles/tears_engine.dir/source/main.cpp.o: source/Events/MouseClickEvent.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: source/Events/MouseMoveEvent.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: source/Program.h
 CMakeFiles/tears_engine.dir/source/main.cpp.o: source/Systems/System.h
@@ -573,7 +590,7 @@ CMakeFiles/tears_engine.dir/source/main.cpp.o: vendor/glm/glm/vec4.hpp
 CMakeFiles/tears_engine.dir/source/main.cpp.o: vendor/glm/glm/vector_relational.hpp
 CMakeFiles/tears_engine.dir/source/main.cpp.o: vendor/glad/include/KHR/khrplatform.h
 
-CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o: source/Components/CameraComponent.h
+CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o: source/Components/CameraComponent.hpp
 CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o: source/Components/Component.h
 CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o: source/Components/TransformComponent.h
 CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o: source/Mesh.hpp

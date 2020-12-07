@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Events/EventManager.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Events/KeyboardEvent.cpp.o"
+  "CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o"
   "CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Program.cpp.o"

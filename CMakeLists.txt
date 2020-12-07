@@ -16,6 +16,8 @@ add_subdirectory(vendor/glfw)
 
 add_executable(tears_engine
         source/main.cpp
+        source/Events/MouseClickEvent.h
+        source/Events/MouseClickEvent.cpp
         source/Program.cpp
         source/Program.h
         source/GameState.h
