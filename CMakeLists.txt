@@ -61,6 +61,12 @@ add_executable(tears_engine
         source/mesh/mesh-utils.hpp
         source/mesh/mesh-utils.cpp
         source/mesh/vertex-attributes.hpp
-        )
+        source/Components/MeshRenderer.h
+        source/Components/Material.h
+        source/Systems/CameraSystem.cpp
+        source/Systems/CameraSystem.hpp
+        source/Systems/RenderSystem.cpp
+        source/Systems/RenderSystem.h
+        source/Systems/TransformSystem.cpp source/Systems/TransformSystem.h)
 
 target_link_libraries(tears_engine glfw)

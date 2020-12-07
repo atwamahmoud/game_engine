@@ -7,12 +7,12 @@
 #include "../Program.h"
 
 
-TransformComponent *transform;
+TransformComponent *transformComp;
 MeshRenderer *renderer;
 CameraComponent *cameraComponent;
 Material *material;
 
-string transformComponentName = typeid(transform).name();
+string transformComponentName = typeid(transformComp).name();
 string meshRendererName = typeid(renderer).name();
 string cameraComponentName = typeid(cameraComponent).name();
 string materialComponentName = typeid(material).name();
@@ -42,14 +42,14 @@ void RenderSystem::update(EntityManager &entityManager,
   for (Entity *entity : entities) {
     // transform...
     // renderer...
-    transform = dynamic_cast<TransformComponent *>(
+      transformComp = dynamic_cast<TransformComponent *>(
         entity->components[transformComponentName]);
     renderer =
         dynamic_cast<MeshRenderer *>(entity->components[meshRendererName]);
     
     renderer->mesh->draw();
   }
-  transform = nullptr;
+    transformComp = nullptr;
   renderer = nullptr;
 
   entities = entityManager.getEntitiesHaving({materialComponentName});
@@ -84,6 +84,6 @@ void RenderSystem::update(EntityManager &entityManager,
     }
 
   }
-  transform = nullptr;
+    transformComp = nullptr;
   renderer = nullptr;
 }

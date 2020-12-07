@@ -7,7 +7,7 @@
 
 Position *xpos;
 
-string name = typeid(xpos).name();
+string MovementName = typeid(xpos).name();
 
 void MovementSystem::update(EntityManager &, EventManager &eventManager,
                             double dt) {
@@ -19,12 +19,12 @@ void MovementSystem::update(EntityManager &, EventManager &eventManager,
 
   eventManager.mouseEvent.addCallback([](EntityManager &entityManager,
                                          MousePosition position) {
-    vector<Entity *> entities = entityManager.getEntitiesHaving({name});
+    vector<Entity *> entities = entityManager.getEntitiesHaving({MovementName});
 
     std::cout << "X: " << position.x << ", Y: " << position.y << "\n";
 
     for (int i = 0; i < entities.size(); i++) {
-      Position *pos = dynamic_cast<Position *>(entities[i]->components[name]);
+      Position *pos = dynamic_cast<Position *>(entities[i]->components[MovementName]);
       pos->x = position.x;
       pos->y = position.y;
     }

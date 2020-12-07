@@ -7,8 +7,8 @@
 
     // An enum for the camera projection type
     enum struct CameraType {
-        Orthographic,
-        Perspective
+        Orthographic, // objects which are far away are smaller than those nearby.
+        Perspective //all objects appear at the same scale
     };
 
     // A class that represents a camera

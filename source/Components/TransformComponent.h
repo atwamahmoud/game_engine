@@ -27,6 +27,9 @@ public:
     // The parent ID however will be needed in case of the first approach but who got the time for that.
     // If you really want it here it is...
     int entityId;
+
+
+
 };
 
 
