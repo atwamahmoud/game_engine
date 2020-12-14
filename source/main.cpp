@@ -89,6 +89,8 @@ int main() {
   }
   // Game Loop
 
+
+
   Entity *shapes = entityManager.createEntity();
   Position *position = new Position();
 
@@ -148,8 +150,7 @@ static void keyCallback(GLFWwindow *window, int key, int scanCode, int action,
   std::cout << "key: " << key << ", scan code: " << scanCode
             << ", action: " << action << ", mods: " << mods << "\n";
 }
-//int main()
-//{
-//
-//}
 
+// 15 December: we have agreed to call program.draw() in
+// onDraw of MenuState and PlayState with different arguments
+// based on the GameState.

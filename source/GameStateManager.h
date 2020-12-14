@@ -7,7 +7,8 @@
 
 #include "./GameState.h"
 #include <GLFW/glfw3.h>
-
+#include "PlayState.h"
+#include "MenuState.h"
 class GameStateManager {
   GameState* currentState;
   GameState* nextState;
@@ -16,7 +17,7 @@ public:
   GameStateManager(GameState* crntState, GameState* nxtState);
   void goToState(GameState*&);
   void run(double delta1);
-  void switchState(int key);
+  void switchState(int key, MenuState* menuState, PlayState* playState);
 };
 
 

@@ -11,6 +11,7 @@ void MenuState::onEnter() {
 
 void MenuState::onDraw(double delta1) {
 
+    prog.draw(234);
 }
 
 void MenuState::onExit() {

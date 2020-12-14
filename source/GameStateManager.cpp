@@ -4,8 +4,7 @@
 
 #include "GameStateManager.h"
 #include "GameState.h"
-#include "PlayState.h"
-#include "MenuState.h"
+
 
 
 GameStateManager::GameStateManager(GameState* crntState, GameState* nxtState){
@@ -39,20 +38,17 @@ void GameStateManager::goToState(GameState*& state) {
   nextState = state;
 }
 
-void GameStateManager::switchState(int key) {
+void GameStateManager::switchState(int key, MenuState* menuState, PlayState* playState) {
     if ( key == GLFW_KEY_ESCAPE){
         PlayState* play = dynamic_cast<PlayState*>(currentState);
         MenuState* menu = dynamic_cast<MenuState*>(currentState);
         if (play)
         {
-
+            nextState = menu;
         }
         else if (menu)
         {
-
+            nextState = play;
         }
-        GameState* ptr = currentState;
-        currentState = nextState;
-        nextState = ptr;
     }
 }
