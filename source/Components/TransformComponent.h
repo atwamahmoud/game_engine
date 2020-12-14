@@ -8,7 +8,7 @@
 
 #include "Component.h"
 #include <vector>
-
+//glm vec:3
 struct Coordinate {
   float x;
   float y;

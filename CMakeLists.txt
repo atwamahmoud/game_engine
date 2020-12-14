@@ -67,6 +67,10 @@ add_executable(tears_engine
         source/Systems/CameraSystem.hpp
         source/Systems/RenderSystem.cpp
         source/Systems/RenderSystem.h
-        source/Systems/TransformSystem.cpp source/Systems/TransformSystem.h)
+        source/Systems/TransformSystem.cpp
+        source/Systems/TransformSystem.h
+        source/Components/TransformComponent.cpp
+        source/Components/TransformComponent.h
+        source/MenuState.cpp source/MenuState.h source/PlayState.cpp source/PlayState.h)
 
 target_link_libraries(tears_engine glfw)

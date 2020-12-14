@@ -20,6 +20,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Component.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Position.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o"
+  "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Entity/Entity.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Entity/EntityManager.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Events/Event.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o"
@@ -28,6 +29,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Events/MouseClickEvent.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Events/MouseMoveEvent.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/GameStateManager.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o"
+  "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/MenuState.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/MenuState.cpp.o"
+  "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/PlayState.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/PlayState.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Program.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Program.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/CameraSystem.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Systems/CameraSystem.cpp.o"
   "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/MovementSystem.cpp" "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o"

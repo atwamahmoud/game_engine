@@ -17,6 +17,7 @@ public:
   MouseMoveEvent mouseEvent = MouseMoveEvent();
   MouseClickEvent mouseClickEvent = MouseClickEvent();
   MousePosition mousePosition;
+  int key;
   KeyboardEvent keyboardEvent = KeyboardEvent();
 };
 

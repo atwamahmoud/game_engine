@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tears_engine.dir/source/Components/Component.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Components/Position.cpp.o"
+  "CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Entity/Entity.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Entity/EntityManager.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Events/Event.cpp.o"
@@ -9,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tears_engine.dir/source/Events/MouseClickEvent.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Events/MouseMoveEvent.cpp.o"
   "CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.o"
+  "CMakeFiles/tears_engine.dir/source/MenuState.cpp.o"
+  "CMakeFiles/tears_engine.dir/source/PlayState.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Program.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Systems/CameraSystem.cpp.o"
   "CMakeFiles/tears_engine.dir/source/Systems/MovementSystem.cpp.o"

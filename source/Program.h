@@ -23,7 +23,7 @@ class Program {
 public:
     Program();
     void attachShader(string filename, GLenum type) const;
-    void draw(MousePosition);
+    void draw(MousePosition, int);
     void draw(int);
     //Get the location of a uniform variable in the shader
 //    GLuint getUniformLocation(const std::string &name) {

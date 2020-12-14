@@ -210,6 +210,33 @@ source/Components/Position.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/Position.cpp.s
 .PHONY : source/Components/Position.cpp.s
 
+source/Components/TransformComponent.o: source/Components/TransformComponent.cpp.o
+
+.PHONY : source/Components/TransformComponent.o
+
+# target to build an object file
+source/Components/TransformComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o
+.PHONY : source/Components/TransformComponent.cpp.o
+
+source/Components/TransformComponent.i: source/Components/TransformComponent.cpp.i
+
+.PHONY : source/Components/TransformComponent.i
+
+# target to preprocess a source file
+source/Components/TransformComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.i
+.PHONY : source/Components/TransformComponent.cpp.i
+
+source/Components/TransformComponent.s: source/Components/TransformComponent.cpp.s
+
+.PHONY : source/Components/TransformComponent.s
+
+# target to generate assembly for a file
+source/Components/TransformComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.s
+.PHONY : source/Components/TransformComponent.cpp.s
+
 source/Entity/Entity.o: source/Entity/Entity.cpp.o
 
 .PHONY : source/Entity/Entity.o
@@ -425,6 +452,60 @@ source/GameStateManager.s: source/GameStateManager.cpp.s
 source/GameStateManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/GameStateManager.cpp.s
 .PHONY : source/GameStateManager.cpp.s
+
+source/MenuState.o: source/MenuState.cpp.o
+
+.PHONY : source/MenuState.o
+
+# target to build an object file
+source/MenuState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/MenuState.cpp.o
+.PHONY : source/MenuState.cpp.o
+
+source/MenuState.i: source/MenuState.cpp.i
+
+.PHONY : source/MenuState.i
+
+# target to preprocess a source file
+source/MenuState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/MenuState.cpp.i
+.PHONY : source/MenuState.cpp.i
+
+source/MenuState.s: source/MenuState.cpp.s
+
+.PHONY : source/MenuState.s
+
+# target to generate assembly for a file
+source/MenuState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/MenuState.cpp.s
+.PHONY : source/MenuState.cpp.s
+
+source/PlayState.o: source/PlayState.cpp.o
+
+.PHONY : source/PlayState.o
+
+# target to build an object file
+source/PlayState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/PlayState.cpp.o
+.PHONY : source/PlayState.cpp.o
+
+source/PlayState.i: source/PlayState.cpp.i
+
+.PHONY : source/PlayState.i
+
+# target to preprocess a source file
+source/PlayState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/PlayState.cpp.i
+.PHONY : source/PlayState.cpp.i
+
+source/PlayState.s: source/PlayState.cpp.s
+
+.PHONY : source/PlayState.s
+
+# target to generate assembly for a file
+source/PlayState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tears_engine.dir/build.make CMakeFiles/tears_engine.dir/source/PlayState.cpp.s
+.PHONY : source/PlayState.cpp.s
 
 source/Program.o: source/Program.cpp.o
 
@@ -766,6 +847,9 @@ help:
 	@echo "... source/Components/Position.o"
 	@echo "... source/Components/Position.i"
 	@echo "... source/Components/Position.s"
+	@echo "... source/Components/TransformComponent.o"
+	@echo "... source/Components/TransformComponent.i"
+	@echo "... source/Components/TransformComponent.s"
 	@echo "... source/Entity/Entity.o"
 	@echo "... source/Entity/Entity.i"
 	@echo "... source/Entity/Entity.s"
@@ -790,6 +874,12 @@ help:
 	@echo "... source/GameStateManager.o"
 	@echo "... source/GameStateManager.i"
 	@echo "... source/GameStateManager.s"
+	@echo "... source/MenuState.o"
+	@echo "... source/MenuState.i"
+	@echo "... source/MenuState.s"
+	@echo "... source/PlayState.o"
+	@echo "... source/PlayState.i"
+	@echo "... source/PlayState.s"
 	@echo "... source/Program.o"
 	@echo "... source/Program.i"
 	@echo "... source/Program.s"

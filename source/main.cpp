@@ -3,6 +3,8 @@
 #include "Program.h"
 #include "Systems/SystemManager.h"
 #include "common.h"
+#include "GameState.h"
+#include "GameStateManager.h"
 #include <iostream>
 #include <unistd.h>
 static void cursorPositionCallback(GLFWwindow *window, double xpos,
@@ -74,8 +76,13 @@ static GLFWwindow *init() {
   return window;
 }
 
-int main() {
 
+
+int main() {
+    GameState* PlayState = NULL;
+    GameState* MenuState = NULL;
+    GameStateManager gameStateManager(MenuState, PlayState);
+//
   GLFWwindow *window = init();
   if (window == nullptr) {
     return -1;
@@ -100,16 +107,22 @@ int main() {
 
   double startTime;
   double endTime = getTime();
-
+  double last_frame_time = 0;
   while (!glfwWindowShouldClose(window)) {
     startTime = getTime();
     double delta = startTime - endTime;
-    prog.draw(eventManager.mousePosition);
+    prog.draw(eventManager.mousePosition, eventManager.key);
     glfwSwapBuffers(window);
     glfwPollEvents();
     systemManager.update(delta);
 
-    endTime = getTime();
+      endTime = getTime();
+
+      double current_frame_time = glfwGetTime();
+      double delta1 = current_frame_time - last_frame_time;
+      gameStateManager.run(delta1);
+      gameStateManager.switchState(eventManager.key);
+      last_frame_time = glfwGetTime();
   }
 
   return 0;
@@ -131,9 +144,12 @@ static void keyCallback(GLFWwindow *window, int key, int scanCode, int action,
     return;
 
   eventManager.keyboardEvent.trigger(key, entityManager);
-
+  eventManager.key = key;
   std::cout << "key: " << key << ", scan code: " << scanCode
             << ", action: " << action << ", mods: " << mods << "\n";
 }
-
+//int main()
+//{
+//
+//}
 

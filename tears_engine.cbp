@@ -140,6 +140,12 @@
 		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/Position.h">
 			<Option target="tears_engine"/>
 		</Unit>
+		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.cpp">
+			<Option target="tears_engine"/>
+		</Unit>
+		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.h">
+			<Option target="tears_engine"/>
+		</Unit>
 		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Entity/Entity.cpp">
 			<Option target="tears_engine"/>
 		</Unit>
@@ -189,6 +195,18 @@
 			<Option target="tears_engine"/>
 		</Unit>
 		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/GameStateManager.h">
+			<Option target="tears_engine"/>
+		</Unit>
+		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/MenuState.cpp">
+			<Option target="tears_engine"/>
+		</Unit>
+		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/MenuState.h">
+			<Option target="tears_engine"/>
+		</Unit>
+		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/PlayState.cpp">
+			<Option target="tears_engine"/>
+		</Unit>
+		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/PlayState.h">
 			<Option target="tears_engine"/>
 		</Unit>
 		<Unit filename="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Program.cpp">

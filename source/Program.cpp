@@ -86,7 +86,7 @@ Program::Program() {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
-void Program::draw(MousePosition mousePosition) {
+void Program::draw(MousePosition mousePosition, int key) {
 
     prevMousePosition = mousePosition;
 
@@ -112,8 +112,6 @@ void Program::draw(MousePosition mousePosition) {
     GLuint flicker_uniform_location = glGetUniformLocation(program, "flicker");
     glUniform1i(flicker_uniform_location, flicker);
 
-    GLuint shape_uniform_location = glGetUniformLocation(program, "shape");
-    glUniform1i(shape_uniform_location, shape);
 
     GLint loc = glGetUniformLocation(program, "iResolution");
     glUniform2f(loc, WINDOW_WIDTH, WINDOW_HEIGHT);//ah
@@ -121,6 +119,27 @@ void Program::draw(MousePosition mousePosition) {
 
     glUniform2f(Mouse_uniform_location, mousePosition.x, mousePosition.y); // -320 => 0
 
+    if (key == GLFW_KEY_1){
+        shape = 1;
+        cout<<"Shape is "<<shape<<endl;
+    }
+    else if (key == GLFW_KEY_2){
+        shape = 2;
+        cout<<"Shape is "<<shape<<endl;
+    }
+    else if (key == GLFW_KEY_3){
+        shape = 3;
+        cout<<"Shape is "<<shape<<endl;
+    }
+    else if (key == GLFW_KEY_4){
+        shape = 4;
+        cout<<"Shape is "<<shape<<endl;
+    }
+    cout<<"Key Scan Code is "<<key<<" and GLFW_KEY_2 "<<GLFW_KEY_2<<endl;
+    cout<<"OUter Shape is "<<shape<<endl;
+
+    GLuint shape_uniform_location = glGetUniformLocation(program, "shape");
+    glUniform1i(shape_uniform_location, shape);
 
     glBindVertexArray(vertex_array);
     glDrawArrays(GL_TRIANGLES, 0, 6);
@@ -137,7 +156,6 @@ void Program::draw(int shape) {
 
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(program);
-
     GLuint scale_uniform_location = glGetUniformLocation(program, "scale");
     glUniform2f(scale_uniform_location, scale.x, scale.y);
     GLuint translation_uniform_location = glGetUniformLocation(program, "translation");

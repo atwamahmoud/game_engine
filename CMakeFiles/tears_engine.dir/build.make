@@ -363,6 +363,45 @@ CMakeFiles/tears_engine.dir/source/Systems/TransformSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Systems/TransformSystem.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Systems/TransformSystem.cpp" -o CMakeFiles/tears_engine.dir/source/Systems/TransformSystem.cpp.s
 
+CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o: CMakeFiles/tears_engine.dir/flags.make
+CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o: source/Components/TransformComponent.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o -c "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.cpp"
+
+CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.cpp" > CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.i
+
+CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/Components/TransformComponent.cpp" -o CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.s
+
+CMakeFiles/tears_engine.dir/source/MenuState.cpp.o: CMakeFiles/tears_engine.dir/flags.make
+CMakeFiles/tears_engine.dir/source/MenuState.cpp.o: source/MenuState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/tears_engine.dir/source/MenuState.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/MenuState.cpp.o -c "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/MenuState.cpp"
+
+CMakeFiles/tears_engine.dir/source/MenuState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/MenuState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/MenuState.cpp" > CMakeFiles/tears_engine.dir/source/MenuState.cpp.i
+
+CMakeFiles/tears_engine.dir/source/MenuState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/MenuState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/MenuState.cpp" -o CMakeFiles/tears_engine.dir/source/MenuState.cpp.s
+
+CMakeFiles/tears_engine.dir/source/PlayState.cpp.o: CMakeFiles/tears_engine.dir/flags.make
+CMakeFiles/tears_engine.dir/source/PlayState.cpp.o: source/PlayState.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/tears_engine.dir/source/PlayState.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tears_engine.dir/source/PlayState.cpp.o -c "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/PlayState.cpp"
+
+CMakeFiles/tears_engine.dir/source/PlayState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tears_engine.dir/source/PlayState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/PlayState.cpp" > CMakeFiles/tears_engine.dir/source/PlayState.cpp.i
+
+CMakeFiles/tears_engine.dir/source/PlayState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tears_engine.dir/source/PlayState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/source/PlayState.cpp" -o CMakeFiles/tears_engine.dir/source/PlayState.cpp.s
+
 # Object files for target tears_engine
 tears_engine_OBJECTS = \
 "CMakeFiles/tears_engine.dir/source/main.cpp.o" \
@@ -386,7 +425,10 @@ tears_engine_OBJECTS = \
 "CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o" \
 "CMakeFiles/tears_engine.dir/source/Systems/CameraSystem.cpp.o" \
 "CMakeFiles/tears_engine.dir/source/Systems/RenderSystem.cpp.o" \
-"CMakeFiles/tears_engine.dir/source/Systems/TransformSystem.cpp.o"
+"CMakeFiles/tears_engine.dir/source/Systems/TransformSystem.cpp.o" \
+"CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o" \
+"CMakeFiles/tears_engine.dir/source/MenuState.cpp.o" \
+"CMakeFiles/tears_engine.dir/source/PlayState.cpp.o"
 
 # External object files for target tears_engine
 tears_engine_EXTERNAL_OBJECTS =
@@ -413,13 +455,16 @@ tears_engine: CMakeFiles/tears_engine.dir/source/mesh/mesh-utils.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Systems/CameraSystem.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Systems/RenderSystem.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/source/Systems/TransformSystem.cpp.o
+tears_engine: CMakeFiles/tears_engine.dir/source/Components/TransformComponent.cpp.o
+tears_engine: CMakeFiles/tears_engine.dir/source/MenuState.cpp.o
+tears_engine: CMakeFiles/tears_engine.dir/source/PlayState.cpp.o
 tears_engine: CMakeFiles/tears_engine.dir/build.make
 tears_engine: vendor/glfw/src/libglfw3.a
 tears_engine: /usr/lib/x86_64-linux-gnu/librt.so
 tears_engine: /usr/lib/x86_64-linux-gnu/libm.so
 tears_engine: /usr/lib/x86_64-linux-gnu/libX11.so
 tears_engine: CMakeFiles/tears_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable tears_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/ahmad/Desktop/Graphics PHHHHHaase2/tears_engine/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable tears_engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tears_engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

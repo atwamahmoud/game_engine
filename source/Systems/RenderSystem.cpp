@@ -58,7 +58,7 @@ void RenderSystem::update(EntityManager &entityManager,
   for (Entity *entity : entities) {
     // transform...
     // renderer...
-    Material* material = dynamic_cast<Material *>(entity->components[materialComponentName]);
+    Material* material = dynamic_cast<Material *>(entity->components[materialComponentName]);//no component
 
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(*material->shader);
